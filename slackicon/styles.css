@@ -1,0 +1,47 @@
+.container{
+	margin-top:200px;
+}
+.section{
+	border-radius: 150px;
+    padding: 10px; 
+    width: 700px;
+    height: 90px;
+    mix-blend-mode: multiply;
+}
+
+.blue{
+    background-color: #70CBDD;
+/*    -webkit-transform: rotate(-15deg); /* Safari */
+    transform: rotate(-10deg);
+    position: relative;
+    top: -10px;
+}
+.yellow{
+	background-color: #E8A824;
+/*	-webkit-transform: rotate(600deg); /* Safari */
+    transform: rotate(-100deg);
+    position: relative;
+    bottom: 150px;
+    left: 150px;
+    bottom: 90px;
+}
+.pink{
+	background-color: #E11665;
+/*	 -webkit-transform: rotate(-15deg);*/ /* Safari */
+    transform: rotate(-10deg);
+    position: relative;
+    bottom: -170px;
+
+}
+.green{
+	background-color: #3FB992;
+	transform: rotate(-100deg);
+	position: relative;
+	bottom: 150px;
+	right: 150px;
+}
+
+/*round the corners: borders increase the pixels so that its spehere
+make all divs the same dimensions
+rotation to make diagonal
+blend (in slack)*/
