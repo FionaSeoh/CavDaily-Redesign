@@ -12,7 +12,10 @@ get_header(); ?>
 		<div id="primary" class="content-area">
         <div class="articleTitle">
             <?php echo the_title( $before, $after, $echo ); ?> 
+        </div>
+        <div class="articleSubTitle">
             <?php echo $author = get_the_author(); ?>
+            <h4><?php cavalierdaily_posted_on(); ?></h4>
         </div>
 			<main id="main" class="site-main" role="main">
 

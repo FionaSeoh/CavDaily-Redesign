@@ -973,6 +973,12 @@ p{
     width: 90%;
     margin: 0 auto;
 }
+.articleSubTitle{
+    margin-top: 70px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
 @media (max-width: 800px) {
     .side-bar-container{
         display: none;
