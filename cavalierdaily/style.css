@@ -918,6 +918,9 @@ p{
 }
 
 .side-bar-container{
-	width: 30%;
+	width: 25%;
 	display: inline-block;
+}
+.two-col{
+	width: 60%;
 }
