@@ -15,6 +15,8 @@
 </style>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+	<div class="orange">
+	</div>
 	<div class="entry-meta">
 		<?php cavalierdaily_posted_on(); ?>
 	</div>

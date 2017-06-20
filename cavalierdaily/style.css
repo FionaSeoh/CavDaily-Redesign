@@ -961,6 +961,14 @@ h2.entry-title{
 	margin:0px;
 }
 header.entry-header{
-	height: 150px;
+	height: 170px;
+/*	margin-top: 0px;*/
 }
-
+.orange{
+	width: 130px;
+	background-color: #f9ab55;
+	height: 23px;
+	float: right;
+	position: relative;
+	top:-13px;
+}
