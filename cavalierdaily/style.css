@@ -935,7 +935,7 @@ p{
     margin-top: -100px;
     width: 90%;
     height: 500px;
-    margin-left: 50px;
+    margin-left: 5%;
 }
 .entry-title a{
     color: white;
@@ -957,4 +957,19 @@ p{
 .linkHolder{
     width: 95%;
     margin: 0 auto;
+}
+@media (max-width: 800px) {
+    .side-bar-container{
+        display: none;
+    }
+    .content-area{
+        display: inline;
+        width: 95%;
+    }
+    .main-container{
+        width: 100%;    
+    }
+    .entry-content{
+        margin: 0;
+    }
 }

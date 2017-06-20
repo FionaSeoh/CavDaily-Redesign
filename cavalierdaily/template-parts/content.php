@@ -21,7 +21,7 @@
         ?></div><?php
 		if ( 'post' === get_post_type() ) : ?>
 		<div class="entry-meta">
-            <?php $author = get_the_author(); ?>   
+            <?php echo $author = get_the_author(); ?> | 
             <?php cavalierdaily_posted_on(); ?>
 		</div><!-- .entry-meta -->
 		<?php
