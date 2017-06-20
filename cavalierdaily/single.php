@@ -8,9 +8,11 @@
  */
 
 get_header(); ?>
-	
 <div class="main-container">
 		<div id="primary" class="content-area">
+        <div class="articleTitle">
+            <?php echo the_title( $before, $after, $echo ); ?> 
+        </div>
 			<main id="main" class="site-main" role="main">
 
 			<?php

@@ -958,6 +958,10 @@ p{
     width: 95%;
     margin: 0 auto;
 }
+.articleTitle{
+    font-size: 3.0em;
+    margin-bottom: -60px;
+}
 @media (max-width: 800px) {
     .side-bar-container{
         display: none;
