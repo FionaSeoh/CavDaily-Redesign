@@ -12,12 +12,7 @@ get_header(); ?>
 <div class="main-container">
 		<div id="primary" class="content-area">
 			<main id="main" class="site-main" role="main">
-			<div class="two-col">
-				<div class="left">
-					foo
-				</div>
-				<div class="right">
-					foo
+
 
 			</div>
 

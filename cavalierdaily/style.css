@@ -54,6 +54,7 @@ html {
 
 body {
 	margin: 0;
+	font-family: 'Abhaya Libre', serif;
 }
 
 article,
@@ -899,16 +900,18 @@ object {
 
 h1{
     font-size: 3.998em;
+    font-family: 'Abhaya Libre', serif;
 }
 h2{
     font-size: 2.827em;
+    font-family: 'Abhaya Libre', serif;
 }
 p{
     font-size: .9em;
 }
 
 .main-container{
-	width: 80%;
+	width: 90%;
 	margin: 0 auto;
 }
 
@@ -920,7 +923,44 @@ p{
 .side-bar-container{
 	width: 25%;
 	display: inline-block;
+	border: 1px black solid;
 }
-.two-col{
-	width: 60%;
+article{
+	display:inline-block;
+	width: 49%;
+	background-color: #f7f5ff;
+	border-bottom: 5px solid #084887;
+	vertical-align: top;
+	margin-left: 10px;
+	padding-top: 15px;
 }
+.entry-title a{
+	text-decoration: none;
+	font-weight: bold;
+}
+header.entry-header{
+	font-size: .827em;
+	height: 180px;
+}
+h2.entry-header{
+	margin: 0;
+	padding: 0;
+}
+span.posted-on{
+	margin: 0;  /*EXTRA SPACE GET RID OF ME*/
+	padding: 0;
+	display: none;
+}
+.entry-content{
+	margin:0px;
+}
+.entry-content p{
+	margin:0px;
+}
+h2.entry-title{
+	margin:0px;
+}
+header.entry-header{
+	height: 150px;
+}
+
