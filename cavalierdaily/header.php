@@ -20,18 +20,88 @@
 	</head>
 
 <body <?php body_class(); ?>>
-<div id="page" class="site">
+<script src="<?php bloginfo('template_directory'); ?>/js/jquery.js"></script>
+<script>
+	 $( document ).ready(function() {
+	 
+	     $( ".lines" ).click(function( event) {
+	 
+	         $(".hidden").toggleClass("hide");
+	         event.preventDefault();
+	 
+	    });
+	 
+	});
+</script>
+
+<div class="hidden hide">
+	<div class="nav-contain-logo"><img height="140px" width="140px" src="<?php bloginfo('template_directory'); ?>/images/invert.png">
+	</div>
+	<div class="nav-contain">
+		<div class="clmn">
+			<a href=""><span><strong>News</strong></span></a>
+			<ul>
+				<li>Grounds</li>
+				<li>Local</li>
+				<li>State & National</li>
+				<li>Student Council</li>
+				<li>Honor Committee</li>
+				<li>Health & Sciences</li>
+			</ul>
+		</div><div class="clmn">
+			<a href=""><span><strong>Sports</strong></span></a>
+			<ul>
+				<li>Lacrosse</li>
+				<li>Baseball</li>
+				<li>Softball</li>
+				<li>Tennis</li>
+				<li>Golf</li>
+				<li>Rowing</li>
+				<li>Track & Field</li>
+			</ul>
+		</div><div class="clmn">
+			<a href=""><span><strong>Opinion</strong></span></a>
+			<ul>
+				<li>Weekly</li>
+				<li>Guest</li>
+				<li>Lead Editorials</li>
+				<li>Letters to the Editor</li>
+			</ul>
+		</div><div class="clmn">
+			<a href=""><span><strong>Life</strong></span></a>
+			<ul>
+				<li>Features</li>
+				<li>Columns</li>
+				<li>Spotlights</li>
+				<li>Love Connection</li>
+				<li>Focus</li>
+				<li>Humor</li>
+			</ul>
+		</div><div class="clmn">
+			<a href=""><span><strong>A&E</strong></span></a>
+			<ul>
+				<li>Reviews</li>
+				<li>Features</li>
+				<li>Community</li>
+				<li>Q&A</li>
+			</ul>
+		</div>
+	</div>
+</div>
+<div class="hamburger-menu">
+		<a href=""><div class="lines"><img  height='30px' width='30px' src="<?php bloginfo('template_directory'); ?>/images/lines.png" /></div></a>
+	<div class="mag-glass"><img  height='26px' width='26px' src="<?php bloginfo('template_directory'); ?>/images/mag-glass.png" /></div>
+</div>
+
+ <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'cavalierdaily' ); ?></a>
 		
 	<header id="masthead" class="site-header" role="banner">
-		<div class="hamburger-menu">
-			<div class="lines"><img  height='30px' width='30px' src="<?php bloginfo('template_directory'); ?>/images/lines.png" /></div>
-			<div class="mag-glass"><img  height='26px' width='26px' src="<?php bloginfo('template_directory'); ?>/images/mag-glass.png" /></div>
-		</div>
+		
 		<div class="site-branding">
 			<?php
 			if ( is_front_page() && is_home() ) : ?>
-				<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img  height='120px' width='120px' src="<?php bloginfo('template_directory'); ?>/images/logo.png" />
+				<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img  height='110px' width='110px' src="<?php bloginfo('template_directory'); ?>/images/logo.png" />
 				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1></a>
 			<?php else : ?>
 				<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img  height='120px' width='120px' src="<?php bloginfo('template_directory'); ?>/images/logo.png" />
