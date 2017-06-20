@@ -908,8 +908,9 @@ p{
 }
 
 .main-container{
-	width: 80%;
+	width: 90%;
 	margin: 0 auto;
+	;
 }
 
 .content-area{
@@ -918,6 +919,54 @@ p{
 }
 
 .side-bar-container{
-	width: 30%;
+	width: 25%;
 	display: inline-block;
+}
+.site-branding {
+	padding-top: 15px;
+	text-align: center;
+}
+#masthead {
+	font-family: 'Abhaya Libre', Helvetica, sans-serif;
+}
+#masthead a{
+	text-decoration: none;
+	color: #292929;
+}
+.site-title {
+	margin: -25px auto;
+	padding: 0 auto;
+}
+.main-navigation {
+	font-weight: bold;
+}
+#primary-menu {
+	width: 90%;
+	margin: 0 auto 30px auto;
+	height: 38px;
+	padding: 5px 0;
+	border-bottom: 3px solid #084887;
+	border-top: 3px solid #084887;
+}
+.lines {
+	position: fixed;
+	top: 4px;
+	left: 15px;
+}
+.mag-glass {
+	position: fixed;
+	top: 5px;
+	right: 15px;
+}
+.hamburger-menu {
+	position: fixed;
+	top: 0;
+	height: 8vh;
+	width: 100%;
+	background-color: #292929;
+}
+#primary {
+	margin: 0;
+	padding: 0;
+	vertical-align: top;
 }
