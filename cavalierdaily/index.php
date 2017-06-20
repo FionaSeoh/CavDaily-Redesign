@@ -50,10 +50,10 @@ get_header(); ?>
 
 			</main><!-- #main -->
 		</div><!-- #primary -->
-
-	<?php
-	get_sidebar(); ?>
-
+		<div class="side-bar-container">
+			<?php
+			get_sidebar(); ?>
+		</div>
 	</div>
 	<?php
 get_footer(); ?>

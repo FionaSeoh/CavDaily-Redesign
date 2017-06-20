@@ -911,3 +911,13 @@ p{
 	width: 80%;
 	margin: 0 auto;
 }
+
+.content-area{
+	width: 70%;
+	display: inline-block;
+}
+
+.side-bar-container{
+	width: 30%;
+	display: inline-block;
+}

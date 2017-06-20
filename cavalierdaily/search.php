@@ -46,8 +46,10 @@ get_header(); ?>
 		</main><!-- #main -->
 	</section><!-- #primary -->
 
-<?php
-get_sidebar(); ?>
+		<div class="side-bar-container">
+			<?php
+			get_sidebar(); ?>
+		</div>
 
 </div>
 
