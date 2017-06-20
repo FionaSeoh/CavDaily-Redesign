@@ -908,7 +908,7 @@ p{
 }
 
 .main-container{
-	width: 80%;
+	width: 90%;
 	margin: 0 auto;
 }
 
@@ -918,6 +918,43 @@ p{
 }
 
 .side-bar-container{
-	width: 30%;
+	width: 25%;
 	display: inline-block;
+}
+.entry-header{
+    width: 85%;
+    background-color: rgba(245, 138, 7,0.75) ;
+    line-height: 30px;
+    z-index: 10;
+    position: relative;
+    top: 430px;
+    margin: 0 auto;
+    height: 130px;
+}
+.entry-content img{
+    margin-top: -100px;
+    width: 90%;
+    height: 500px;
+    margin-left: 50px;
+}
+.entry-title a{
+    color: white;
+    font-size: .7em;
+    text-decoration: none;
+}
+.entry-meta{
+    color: white;
+    margin-left: 23px;
+    margin-top: -34px;
+}
+.entry-content{
+}
+#primary{
+    margin: 0;
+    padding: 0;
+    vertical-align: top;
+}
+.linkHolder{
+    width: 95%;
+    margin: 0 auto;
 }
