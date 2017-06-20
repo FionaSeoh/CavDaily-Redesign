@@ -141,3 +141,13 @@ require get_template_directory() . '/inc/customizer.php';
  * Load Jetpack compatibility file.
  */
 require get_template_directory() . '/inc/jetpack.php';
+
+/** 
+ * limitin the length of an excerpt for the sidebar
+ */
+
+function wpdocs_custom_excerpt_length( $length ) {
+    return 5;
+}
+add_filter( 'excerpt_length', 'wpdocs_custom_excerpt_length', 999 );
+
