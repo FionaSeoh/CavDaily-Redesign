@@ -961,6 +961,17 @@ p{
 .articleTitle{
     font-size: 3.0em;
     margin-bottom: -60px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.articleText{
+    width: 90%;
+    margin: 0 auto;
+}
+.comments{
+    width: 90%;
+    margin: 0 auto;
 }
 @media (max-width: 800px) {
     .side-bar-container{
