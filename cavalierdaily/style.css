@@ -1005,10 +1005,11 @@ p{
 .share-buttons{
     height: 35px;
     width: 290px;
-    margin-bottom: 30px;
     float: right;
     margin-right: 5%;
     z-index: 10;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 @media (max-width: 800px) {
     .side-bar-container{

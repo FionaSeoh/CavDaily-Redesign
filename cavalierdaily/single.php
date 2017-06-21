@@ -8,12 +8,12 @@
  */
 
 get_header(); ?>
-<div class="main-container">
+<div class="main-container"> 
 		<div id="primary" class="content-area">
         <div class="articleTitle">
             <?php echo the_title( $before, $after, $echo ); ?> 
-                    <div class="articleSubTitle">
-            <?php echo $author = get_the_author(); ?>
+        <div class="articleSubTitle">
+            <?php echo the_author(); ?>
             <h4><?php cavalierdaily_posted_on(); ?></h4>
         </div>
         </div>
