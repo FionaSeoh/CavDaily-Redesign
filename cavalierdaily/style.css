@@ -969,6 +969,7 @@ p{
     padding-top: 200px;
     margin: 0 auto;
     width: 95%;
+    line-height: 1;
 }
 
 .articleTitleHomePage a{
@@ -980,7 +981,7 @@ p{
 }
 .orangeBox{
     background: rgba(248,133,31,0.9);
-    margin-top: -10px;
+    padding-bottom: 0.2px;
 }
 @media (max-width: 800px) {
     .side-bar-container{
