@@ -958,6 +958,30 @@ p{
     width: 95%;
     margin: 0 auto;
 }
+.articleImageHomePage{
+    margin: 0 auto;
+    border-bottom: 9px #004D87 solid;
+}
+.articleTitleHomePage{
+    z-index: 12;
+    position: relative;
+    height: 30%;
+    padding-top: 200px;
+    margin: 0 auto;
+    width: 95%;
+}
+
+.articleTitleHomePage a{
+    text-decoration: none;
+    color: white;
+}
+.articleTitleHomePage h2{
+    margin-left: 2%;
+}
+.orangeBox{
+    background: rgba(248,133,31,0.9);
+    margin-top: -10px;
+}
 @media (max-width: 800px) {
     .side-bar-container{
         display: none;
