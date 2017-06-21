@@ -21,36 +21,33 @@ if ( ! is_active_sidebar( 'sidebar-1' ) ) {
  	<!-- If it is, the div box is given the CSS class "post-cat-three". -->
  	<!-- Otherwise, the div box is given the CSS class "post". -->
 
- 	<?php if ( in_category( 'Featured' ) ) : ?>
- 		<div class="featured-post">
- 			<?php $thumb = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' );?>
-			<div id="post" class="featured-post-sidebar-image" style="background-image: url('<?php echo $thumb['0'];?>'); width: =100%; height: 100%;">
-				<div class="featured-post-sidebar-title">
-					<h3><a href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h3>
+	 	<?php if ( in_category( 'Featured' ) && in_category('Trending') ) : ?>
+	 		<div class="featured-post">
+	 			<?php $thumb = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' );?>
+				<div id="post" class="featured-post-sidebar-image" style="background-image: url('<?php echo $thumb['0'];?>'); width: =100%; height: 100%;">
+					<div class="featured-post-sidebar-title">
+						<h3><a href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h3>
+					</div>
+	 			</div>
+	 		</div>
+	 	<?php elseif (in_category('Trending')) : ?>
+	 		<div class="sidebar-post">
+			 		<!-- Display the Post Thumbnail -->
+			 	<?php $thumb = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' );?>
+				<div id="post" class="sidebar-image" style="background-image: url('<?php echo $thumb['0'];?>'); width: =100%; height: 100%;">
+			 	<!-- Display the Title as a link to the Post's permalink. -->
+			 	</div><div class="sidebar-article-text">
+				 	<h3><a href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h3>
+
+				 	<div class="entry">
+				 		<?php the_excerpt(); ?>
+				 	</div>
 				</div>
- 			</div>
- 		</div>
- 	<?php else : ?>
- 		<div class="sidebar-post">
-		 		<!-- Display the Post Thumbnail -->
-		 	<?php $thumb = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' );?>
-			<div id="post" class="sidebar-image" style="background-image: url('<?php echo $thumb['0'];?>'); width: =100%; height: 100%;">
-		 	<!-- Display the Title as a link to the Post's permalink. -->
-		 	</div><div class="sidebar-article-text">
-			 	<h3><a href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h3>
+	 		</div>
 
+	 	<?php else: ?>
+	 		<div class="sidebar-invisible"></div>
 
-			 	<!-- Display the date (November 16th, 2009 format) and a link to other posts by this posts author. 
-
-			 	<small><?php the_author(); ?> - <?php the_time('m/d/Y'); ?></small> -->
-
-
-			 	<!-- Display an excerpt from the article -->
-			 	<div class="entry">
-			 		<?php the_excerpt(); ?>
-			 	</div>
-			</div>
- 		</div>
  	<?php endif; ?>
 
  	<!-- Stop The Loop (but note the "else:" - see next line). -->

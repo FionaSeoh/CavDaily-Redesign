@@ -912,14 +912,15 @@ h2{
     font-size: 2.827em;
 }
 h3{
-	font-size: 18px;
+	font-size: 14px;
 	color: black;
-	padding: 10px 0;
 	margin: 0;
+	padding: 5px;
 	font-family: 'Abhaya Libre', serif;
+	line-height: 15px;
 }
 p{
-    font-size: 14px;
+    font-size: 12px;
     margin: 0;
     font-family: 'Abhaya Libre', serif;
 }
@@ -949,7 +950,7 @@ p{
 	width: 92%;
 	margin: 0 auto;
 	margin-bottom: 16px;
-	height: 130px;
+	height: 150px;
 }
 
 .featured-post-sidebar-image{
@@ -967,10 +968,11 @@ p{
 	left: 5%;
 	background-color: #f58a07;
 	opacity: .8;
+	font-size: 16px;
+	padding-left: 7px;
 }
 
 .featured-post-sidebar-title a{
-	padding-left: 10px;
 	color: white;
 }
 
@@ -980,26 +982,35 @@ p{
 	margin: 0 auto;
 	margin-bottom: 8px;
 	border-bottom: solid #f9ab55 5px;
-	height: 100px;
+	height: 120px;
 }
 
 .sidebar-title{
 	padding-left: 10px;
 	color: white;
+	font-size: 18px;
+	line-height: 40px;
 }
 
 .sidebar-image{
-	width: 50%;
+	width: 32%;
 	height: 100%;
 	display: inline-block;
 	background-size: cover;
+	background-position: center;
 }
 
 .sidebar-article-text{
-	width: 50%;
+	width: 68%;
 	display: inline-block;
 	vertical-align: top;
 	padding-left: 10px;
 	height: 100%;
 	overflow: hidden;
 }
+
+.sidebar-invisible{
+	display: none;
+}
+
+/*media queries for sidebar*/
