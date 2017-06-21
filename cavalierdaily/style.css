@@ -960,7 +960,7 @@ p{
 }
 .articleTitle{
     font-size: 3.0em;
-    margin-bottom: -60px;
+    margin-bottom: 0px; /*space between article pic and title*/
     width: 90%;
     margin-left: auto;
     margin-right: auto;
@@ -974,10 +974,41 @@ p{
     margin: 0 auto;
 }
 .articleSubTitle{
-    margin-top: 70px;
+    width: 90%;
+    font-size: 16px;
+    margin-bottom: -55px;
+}
+.singleArticlePic{
     width: 90%;
     margin-left: auto;
     margin-right: auto;
+}
+.singleArticlePic img{
+    width: 100%;
+}
+.fb-share-button{
+    float: right;
+    margin-right: 5%;
+}
+.twitter-share-button{
+    float: right;
+    margin-right: 10px;
+}
+.email-share-button{
+    float: right;
+    margin-right: 10px;
+}
+.google-plus-share-button{
+    float: right;
+    margin-right: 10px;
+}
+.share-buttons{
+    height: 35px;
+    width: 290px;
+    margin-bottom: 30px;
+    float: right;
+    margin-right: 5%;
+    z-index: 10;
 }
 @media (max-width: 800px) {
     .side-bar-container{
