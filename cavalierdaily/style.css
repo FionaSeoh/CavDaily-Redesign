@@ -910,7 +910,6 @@ p{
 .main-container{
 	width: 90%;
 	margin: 0 auto;
-	;
 }
 
 .content-area{
@@ -940,14 +939,27 @@ p{
 .main-navigation {
 	font-weight: bold;
 }
-#primary-menu {
+.menu-primary-container {
 	width: 90%;
 	margin: 0 auto 30px auto;
 	height: 38px;
-	padding: 5px 0;
+	padding-top: 4px;
+	padding-bottom: 4px;
 	border-bottom: 3px solid #084887;
 	border-top: 3px solid #084887;
 }
+
+.menu-primary-container ul {
+	width: 90%;
+	margin: 0 auto;
+}
+.menu-primary-container li {
+	display: inline-block;
+	width: 20%;
+	text-align: center;
+	font-size: 1.1em;
+}
+
 .lines {
 	position: fixed;
 	top: 4px;
@@ -978,10 +990,14 @@ p{
 	top: 40px;
 	background-color: #292929;
 	width: 100%;
-	height: 400px;
+	height: 450px;
 }
 .hide {
 	display: none;
+}
+
+.padding {
+	padding-top: 150px;
 }
 .nav-contain-logo {
 	width: 80%;
@@ -992,53 +1008,79 @@ p{
 	width: 80%;
 	margin: 0px auto 0px auto;
 }
-.clmn {
+#hamburger {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+.menu-item-has-children {
 	vertical-align: top;
 	display: inline-block;
 	text-align: center;
 	padding: 0;
+	line-height: 120%;
 	margin: 0;
-	width: 20%;
-	height: 100px;
-}
-.clmn span{
-	font-family: 'Abhaya Libre', Helvetica, sans-serif;
+	width: 19.5%;
 	font-size: 1.8em;
+	font-weight: bold;
+}
+#hamburger a{
+	font-family: 'Abhaya Libre', Helvetica, sans-serif;
 	color: #FFF;
 	display: block;
 	width: 100%;
 	margin: 0 auto;
-}
-
-.clmn a {
 	text-decoration: none;
 }
 
-.clmn ul {
-	width: 90%;
-	margin: 10px 10px 10px 30px;
+.menu-item-has-children li {
+	list-style: none;
+	font-size: 0.8em;
+	/*height: 35px;
+*/	width: 130%;
+	margin: 0 0 0 -60px;
+	font-weight: normal;
 	text-align: left;
 }
 
-.clmn li {
-	line-height: 120%;
-	display: block;
-	margin-left: -50px;
-	list-style: none;
-	padding: 0;
-	font-family: 'Abhaya Libre', Helvetica, sans-serif;
-	font-size: 1.3em;
-	color: #FFF;
+
+.nav-contain-logo img {
+	margin-top: -15px;
 }
-@media screen and (max-width: 1150px) {
+
+@media screen and (max-width: 1300px) {
 	.nav-contain {
-		width: 100%;
+		width: 95%;
+	}
+	.menu-item-has-children {
+		font-size: 1.5em;
+	}
+	.menu-item-has-children li {
+		line-height: 140%;
+		font-size: 0.8em;
+		width: 180%;
 	}
 	.hidden {
-		margin-top: -7px;
+		height: 380px;
 	}
-	.clmn li {
-		font-size: 1em;
-		line-height: 150%;
+}
+
+@media screen and (max-width: 850px) {
+	#site-navigation {
+		display: none;
+	}
+	.site-title {
+		line-height: 170%;
+		font-size: 3em;
+	}
+	.menu-item-has-children {
+		width: 100%;
+		height: 35px;
+		font-size: 1.4em;
+	}
+	.nav-contain-logo img {
+		height: 75px;
+		width: 80px;
+		margin-top: -30px;
 	}
 }

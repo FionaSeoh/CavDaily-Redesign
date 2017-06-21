@@ -23,69 +23,113 @@
 <script src="<?php bloginfo('template_directory'); ?>/js/jquery.js"></script>
 <script>
 	 $( document ).ready(function() {
-	 
+	     
 	     $( ".lines" ).click(function( event) {
 	 
 	         $(".hidden").toggleClass("hide");
 	         event.preventDefault();
 	 
-	    });
-	 
+	     });
+
+	     var width = $(window).width();
+	     if (width <=850) {
+	     	$(".menu-item-has-children li").addClass("hide");
+
+	     	// put stuff for accordion function here
+	     	$( "#hamburger>li:nth-child(1)" ).click(function( event) {
+	 	
+		         $(".news-crews").removeClass("hide");
+		         $(".sports-crews").addClass("hide");
+		         $(".life-crews").addClass("hide");
+		         $(".op-crews").addClass("hide");
+		         $(".ae-crews").addClass("hide");
+		         event.preventDefault();
+		 
+	     	});
+
+	     	$( "#hamburger>li:nth-child(2)" ).click(function( event) {
+		         $(".sports-crews").removeClass("hide");
+		         $(".news-crews").addClass("hide");
+		         $(".life-crews").addClass("hide");
+		         $(".op-crews").addClass("hide");
+		         $(".ae-crews").addClass("hide");
+
+		         event.preventDefault();
+		 
+	     	});
+
+	     	$( "#hamburger>li:nth-child(3)" ).click(function( event) {
+	 	
+		         $(".life-crews").removeClass("hide");
+		         $(".sports-crews").addClass("hide");
+		         $(".news-crews").addClass("hide");
+		         $(".op-crews").addClass("hide");
+		         $(".ae-crews").addClass("hide");
+		         // $("#hamburger>li:nth-child(2)>a").removeClass("padding");
+		         // $("#hamburger>li:nth-child(3)>a").removeClass("padding");
+		         // $("#hamburger>li:nth-child(4)>a").addClass("padding");
+		         // $("#hamburger>li:nth-child(5)>a").addClass("padding");
+		         event.preventDefault();
+		 
+	     	});
+
+	     	$( "#hamburger>li:nth-child(4)" ).click(function( event) {
+	 	
+		         $(".op-crews").removeClass("hide");
+		         $(".sports-crews").addClass("hide");
+		         $(".life-crews").addClass("hide");
+		         $(".news-crews").addClass("hide");
+		         $(".ae-crews").addClass("hide");
+		         // $("#hamburger>li:nth-child(2)>a").removeClass("padding");
+		         // $("#hamburger>li:nth-child(3)>a").removeClass("padding");
+		         // $("#hamburger>li:nth-child(4)>a").removeClass("padding");
+		         // $("#hamburger>li:nth-child(5)>a").toggleClass("padding");
+		         event.preventDefault();
+		 
+	     	});
+
+	     	$( "#hamburger>li:nth-child(5)" ).click(function( event) {
+	 	
+		         $(".ae-crews").toggleClass("hide");
+		         $(".sports-crews").addClass("hide");
+		         $(".life-crews").addClass("hide");
+		         $(".op-crews").addClass("hide");
+		         $(".news-crews").addClass("hide");
+		         event.preventDefault();
+		 
+	     	});
+	     	// here's where it ends
+	     }
+
+	     $(window).resize(function() {
+
+	     	$("#hamburger>li:nth-child(1)>a").removeClass("padding");
+	         $("#hamburger>li:nth-child(2)>a").removeClass("padding");
+	         $("#hamburger>li:nth-child(3)>a").removeClass("padding");
+	         $("#hamburger>li:nth-child(4)>a").removeClass("padding");
+	         $("#hamburger>li:nth-child(5)>a").removeClass("padding");
+
+		    if ($(window).width() > 850) {
+		     $('.menu-item-has-children li').removeClass('hide');
+		    }
+		    else {$('.menu-item-has-children li').addClass('hide');}
+		 });
 	});
+
 </script>
 
 <div class="hidden hide">
 	<div class="nav-contain-logo"><img height="140px" width="140px" src="<?php bloginfo('template_directory'); ?>/images/invert.png">
 	</div>
 	<div class="nav-contain">
-		<div class="clmn">
-			<a href=""><span><strong>News</strong></span></a>
-			<ul>
-				<li>Grounds</li>
-				<li>Local</li>
-				<li>State & National</li>
-				<li>Student Council</li>
-				<li>Honor Committee</li>
-				<li>Health & Sciences</li>
-			</ul>
-		</div><div class="clmn">
-			<a href=""><span><strong>Sports</strong></span></a>
-			<ul>
-				<li>Lacrosse</li>
-				<li>Baseball</li>
-				<li>Softball</li>
-				<li>Tennis</li>
-				<li>Golf</li>
-				<li>Rowing</li>
-				<li>Track & Field</li>
-			</ul>
-		</div><div class="clmn">
-			<a href=""><span><strong>Opinion</strong></span></a>
-			<ul>
-				<li>Weekly</li>
-				<li>Guest</li>
-				<li>Lead Editorials</li>
-				<li>Letters to the Editor</li>
-			</ul>
-		</div><div class="clmn">
-			<a href=""><span><strong>Life</strong></span></a>
-			<ul>
-				<li>Features</li>
-				<li>Columns</li>
-				<li>Spotlights</li>
-				<li>Love Connection</li>
-				<li>Focus</li>
-				<li>Humor</li>
-			</ul>
-		</div><div class="clmn">
-			<a href=""><span><strong>A&E</strong></span></a>
-			<ul>
-				<li>Reviews</li>
-				<li>Features</li>
-				<li>Community</li>
-				<li>Q&A</li>
-			</ul>
-		</div>
+		<?php
+			wp_nav_menu( array(
+				'theme_location' => 'menu-2',
+				'menu_id'        => 'hamburger',
+				'container' => false, 
+				'menu_class' => 'nav',
+			) );
+		?>
 	</div>
 </div>
 <div class="hamburger-menu">
