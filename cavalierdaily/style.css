@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Abhaya+Libre:500,700');
 /*
 Theme Name: cavalierdaily
 Theme URI: http://underscores.me/
@@ -54,6 +55,7 @@ html {
 
 body {
 	margin: 0;
+	font-family: 'Abhaya Libre', serif;
 }
 
 article,
@@ -91,11 +93,16 @@ template {
 
 a {
 	background-color: transparent;
+	color: black;
 }
 
-a:active,
-a:hover {
+/*a:active
+ {
 	outline: 0;
+}*/
+
+a:hover{
+	text-decoration-style: underline;
 }
 
 abbr[title] {
@@ -507,27 +514,28 @@ textarea {
 ## Links
 --------------------------------------------------------------*/
 a {
-	color: royalblue;
+	color: black;
+	text-decoration: none;
 }
 
 a:visited {
-	color: purple;
+	color: royalblue;
 }
 
 a:hover,
 a:focus,
 a:active {
-	color: midnightblue;
+	text-decoration-style: underline;
 }
 
 a:focus {
 	outline: thin dotted;
 }
 
-a:hover,
+/*a:hover,
 a:active {
 	outline: 0;
-}
+}*/
 
 /*--------------------------------------------------------------
 ## Menus
@@ -903,8 +911,18 @@ h1{
 h2{
     font-size: 2.827em;
 }
+h3{
+	font-size: 14px;
+	color: black;
+	margin: 0;
+	padding: 5px;
+	font-family: 'Abhaya Libre', serif;
+	line-height: 15px;
+}
 p{
-    font-size: .9em;
+    font-size: 12px;
+    margin: 0;
+    font-family: 'Abhaya Libre', serif;
 }
 
 .main-container{
@@ -915,12 +933,17 @@ p{
 .content-area{
 	width: 70%;
 	display: inline-block;
+	vertical-align: top;
 }
 
 .side-bar-container{
-	width: 25%;
+/*	width: 25%; my code*/
+/*	display: inline-block;*/
+    width: 28%;
 	display: inline-block;
+	background-color: #084887;
 }
+
 .entry-header{
     width: 85%;
     background-color: rgba(245, 138, 7,0.75) ;
@@ -1010,6 +1033,115 @@ p{
     z-index: 10;
     margin-top: 40px;
     margin-bottom: 40px;
+}
+
+.widget-area{
+	background-color: #084887;
+}
+
+.sidebar-featured-post{
+	width: 92%;
+	margin: 0 auto;
+	margin-bottom: 16px;
+	height: 150px;
+}
+
+.featured-post-sidebar-image{
+	width: 100%;
+	height: 100%;
+	position: relative;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.featured-post-sidebar-title{
+	position: absolute;
+	width: 90%;
+	bottom: 5px;
+	left: 5%;
+	background-color: #f58a07;
+	opacity: .8;
+	font-size: 16px;
+	padding-left: 7px;
+}
+
+.featured-post-sidebar-title a{
+	color: white;
+}
+
+.sidebar-post{
+	background-color: white;
+	width: 92%;
+	margin: 0 auto;
+	margin-bottom: 8px;
+	border-bottom: solid #f9ab55 8px;
+	height: 120px;
+}
+
+.sidebar-title{
+	padding-left: 10px;
+	color: white;
+	font-size: 18px;
+	line-height: 40px;
+}
+
+.sidebar-image{
+	width: 30%;
+	height: 100%;
+	margin-left: 2%;
+	display: inline-block;
+	background-size: cover;
+	background-position: center;
+}
+
+.sidebar-article-text{
+	width: 68%;
+	display: inline-block;
+	vertical-align: top;
+	padding-left: 10px;
+	height: 100%;
+	overflow: hidden;
+}
+
+.sidebar-invisible{
+	display: none;
+}
+
+/*media queries for sidebar*/
+
+@media screen and (max-width: 1040px){
+	.entry{
+		display: none;
+	}
+
+	.sidebar-image{
+		width: 43%;
+	}
+
+	.sidebar-article-text{
+		width: 55%;
+	}
+}
+
+@media screen and (max-width: 875px){
+	.sidebar-image{
+		display: none;
+	}
+
+	.sidebar-article-text{
+		width: 100%;
+	}
+
+	.sidebar-post{
+		height: 75px;
+	}
+}
+
+@media screen and (max-width: 800px){
+	.widget-area{
+		display: none;
+	}
+		
 }
 @media (max-width: 800px) {
     .side-bar-container{
