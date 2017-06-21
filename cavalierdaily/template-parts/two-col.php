@@ -17,45 +17,31 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<div class="orange">
 	</div>
-	<div class="entry-meta">
-		<?php cavalierdaily_posted_on(); ?>
-	</div>
-	<header class="entry-header">
-		<?php
-		if ( is_singular() ) :
-			the_title( '<h1 class="entry-title">', '</h1>' );
-		else :
-			the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
-		endif;
-
-		if ( 'post' === get_post_type() ) : ?>
-
-		<?php
-		endif; ?>
-	</header><!-- .entry-header -->
-
-	<div class="entry-content">
-		<?php
-			the_content( sprintf(
-				wp_kses(
-					/* translators: %s: Name of current post. Only visible to screen readers */
-					__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'cavalierdaily' ),
-					array(
-						'span' => array(
-							'class' => array(),
-						),
-					)
-				),
-				get_the_title()
-			) );
-
-			wp_link_pages( array(
-				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'cavalierdaily' ),
-				'after'  => '</div>',
-			) );
-		?>
+		
+		<?php $args = array('posts_per_page' => 4);
+                    $loop = new WP_Query($args);
+                    while($loop->have_posts()):$loop->the_post();?>
+                        <div class="latPara">
+                            <div class="latTitle">
+                                <a title="<?php the_title(); ?>"><?php the_title(); ?></a>
+                            </div>
+                        <div class="latD-A">
+                               by <?php the_author(); ?> | <?php the_time('F j, Y'); ?>
+                        </div>
+                            <div class="latContent">
+                                <?php
+                                $threshold = 120;
+                                if (strlen(get_the_content()) >= $threshold) {
+                                    while(substr(get_the_content(), $threshold, 1) != " ")
+                                        $threshold--;
+                                }
+                                $content = substr(get_the_content(),0,$threshold)."...";
+                                echo $content; ?>
+                            </div>
+                        </div>
+                        <br>
+    	<?php endwhile; ?>
 	</div><!-- .entry-content -->
-
 	<footer class="entry-footer">
 		<?php cavalierdaily_entry_footer(); ?>
 	</footer><!-- .entry-footer -->
