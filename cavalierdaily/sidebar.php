@@ -22,7 +22,7 @@ if ( ! is_active_sidebar( 'sidebar-1' ) ) {
  	<!-- Otherwise, the div box is given the CSS class "post". -->
 
 	 	<?php if ( in_category( 'Featured' ) && in_category('Trending') ) : ?>
-	 		<div class="featured-post">
+	 		<div class="sidebar-featured-post">
 	 			<?php $thumb = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' );?>
 				<div id="post" class="featured-post-sidebar-image" style="background-image: url('<?php echo $thumb['0'];?>'); width: =100%; height: 100%;">
 					<div class="featured-post-sidebar-title">
