@@ -981,7 +981,7 @@ p{
 	width: 92%;
 	margin: 0 auto;
 	margin-bottom: 8px;
-	border-bottom: solid #f9ab55 5px;
+	border-bottom: solid #f9ab55 8px;
 	height: 120px;
 }
 
@@ -993,8 +993,9 @@ p{
 }
 
 .sidebar-image{
-	width: 32%;
+	width: 30%;
 	height: 100%;
+	margin-left: 2%;
 	display: inline-block;
 	background-size: cover;
 	background-position: center;
@@ -1014,3 +1015,38 @@ p{
 }
 
 /*media queries for sidebar*/
+
+@media screen and (max-width: 1040px){
+	.entry{
+		display: none;
+	}
+
+	.sidebar-image{
+		width: 43%;
+	}
+
+	.sidebar-article-text{
+		width: 55%;
+	}
+}
+
+@media screen and (max-width: 875px){
+	.sidebar-image{
+		display: none;
+	}
+
+	.sidebar-article-text{
+		width: 100%;
+	}
+
+	.sidebar-post{
+		height: 75px;
+	}
+}
+
+@media screen and (max-width: 800px){
+	.widget-area{
+		display: none;
+	}
+		
+}
