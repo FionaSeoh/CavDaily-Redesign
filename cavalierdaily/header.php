@@ -14,10 +14,10 @@
 	<head>
 		<meta charset="<?php bloginfo( 'charset' ); ?>">
 		<link href="https://fonts.googleapis.com/css?family=Abhaya+Libre" rel="stylesheet">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="profile" href="http://gmpg.org/xfn/11">
-		<?php wp_head(); ?>
-	</head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="profile" href="http://gmpg.org/xfn/11">
+        <?php wp_head(); ?>
+    </head>
 
 <body <?php body_class(); ?>>
 <script src="<?php bloginfo('template_directory'); ?>/js/jquery.js"></script>
@@ -143,7 +143,7 @@
 	<header id="masthead" class="site-header" role="banner">
 		
 		<div class="site-branding">
-			<?php
+			<?php    
 			if ( is_front_page() && is_home() ) : ?>
 				<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img  height='110px' width='110px' src="<?php bloginfo('template_directory'); ?>/images/logo.png" />
 				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1></a>

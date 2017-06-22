@@ -936,8 +936,7 @@ p{
 	vertical-align: top;
 }
 
-.side-bar-container{
-	width: 28%;
+.side-bar-container{	width: 28%;
 	display: inline-block;
 	background-color: #084887;
 }
@@ -1212,3 +1211,112 @@ p{
 		margin-top: -30px;
 	}
 }
+.entry-header{
+    width: 85%;
+    background-color: rgba(245, 138, 7,0.75) ;
+    line-height: 30px;
+    z-index: 10;
+    position: relative;
+    top: 430px;
+    margin: 0 auto;
+    height: 130px;
+}
+.entry-content img{
+    margin-top: -100px;
+    width: 90%;
+    height: 500px;
+    margin-left: 5%;
+}
+.entry-title a{
+    color: white;
+    font-size: .7em;
+    text-decoration: none;
+}
+.entry-meta{
+    color: white;
+    margin-left: 23px;
+    margin-top: -34px;
+}
+.entry-content{
+}
+#primary{
+    margin: 0;
+    padding: 0;
+    vertical-align: top;
+}
+.linkHolder{
+    width: 95%;
+    margin: 0 auto;
+}
+.articleImageHomePage{
+    margin: 0 auto;
+    border-bottom: 9px #004D87 solid;
+}
+.articleTitleHomePage{
+    z-index: 12;
+    position: relative;
+    height: 30%;
+    padding-top: 200px;
+    margin: 0 auto;
+    width: 95%;
+    line-height: 1;
+}
+
+.articleTitleHomePage a{
+    text-decoration: none;
+    color: white;
+    font-size: 3vw;
+    
+}
+.articleTitleHomePage h2{
+    margin-left: 2%;
+}
+.orangeBox{
+    background: rgba(248,133,31,0.9);
+    position: absolute;
+    width: 99%;
+    bottom: -165px;
+    
+}
+.orangeBoxArticleAuthor{
+    font-size: 14px;
+    margin-top: -30px;
+    color: white;
+    font-family: 'Abhaya Libre', serif;
+
+}
+.orangeArticleTitle{
+    margin-top: -0.1px;
+    font-family: 'Abhaya Libre', serif;
+
+}
+@media (max-width: 1250px) {
+    .orangeArticleTitle a{
+        font-size: 30px;
+        
+    }
+}
+@media (max-width: 800px) {
+    .side-bar-container{
+        display: none;
+    }
+    .content-area{
+        display: inline;
+        width: 95%;
+    }
+    .main-container{
+        width: 100%;    
+    }
+    .entry-content{
+        margin: 0;
+    }
+}
+@media (max-width: 600px) {
+    .orangeArticleTitle a{
+        font-size: 20px;
+    }
+    .orangeArticleTitle{
+        line-height: 18px;
+    }
+}
+>>>>>>> cathero

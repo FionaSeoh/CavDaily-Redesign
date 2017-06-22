@@ -29,17 +29,7 @@ get_header(); ?>
 				endif;
 
 				/* Start the Loop */
-				while ( have_posts() ) : the_post();
-
-					/*
-					 * Include the Post-Format-specific template for the content.
-					 * If you want to override this in a child theme, then include a file
-					 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
-					 */
-					get_template_part( 'template-parts/content', get_post_format() );
-
-				endwhile;
-
+				
 				the_posts_navigation();
 
 			else :
@@ -47,6 +37,27 @@ get_header(); ?>
 				get_template_part( 'template-parts/content', 'none' );
 
 			endif; ?>
+                <div id="featured">
+                <?php
+                query_posts('posts_per_page=3&cat=1'); /*1, 2*/
+                if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
+                    <div class="articleImageHomePage" style="background:url(' <?php the_post_thumbnail_url();?>');
+                        background-size: cover;
+                        background-position: center center;
+                        width: 90%;
+                        height: 380px;"
+                        >
+                <div class="articleTitleHomePage">
+                    <div class="orangeBox">
+                        <h2 class="orangeArticleTitle" style=""><a href="<?php the_permalink(); ?>"><?php the_title();/*3*/ ?></a></h2>  
+                        <h2 class="orangeBoxArticleAuthor">Posted by: <?php the_author(); ?> | <?php the_date();?></h2>
+                    </div>
+                
+                </div>
+                    </div>
+                <p><?php the_excerpt(); ?></p>
+                <?php endwhile; ?> <?php wp_reset_query(); /*4*/ ?>
+                </div>
 
 			</main><!-- #main -->
 		</div><!-- #primary -->
