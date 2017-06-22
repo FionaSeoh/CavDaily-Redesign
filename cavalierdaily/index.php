@@ -48,10 +48,20 @@ get_header(); ?>
                         height: 380px;"
                         >
                 <div class="articleTitleHomePage">
+                <?php
+                if ( ! is_home() && ! is_front_page() ) : ?>
                     <div class="orangeBox">
                         <h2 class="orangeArticleTitle" style=""><a href="<?php the_permalink(); ?>"><?php the_title();/*3*/ ?></a></h2>  
                         <h2 class="orangeBoxArticleAuthor">Posted by: <?php the_author(); ?> | <?php the_date();?></h2>
                     </div>
+                <?php
+                else : ?>
+                    <h2 class="orangeArticleTitle" style=""><a href="<?php the_permalink(); ?>"><?php the_title();/*3*/ ?></a></h2>  
+                    <h2 class="orangeBoxArticleAuthor">Posted by: <?php the_author(); ?> | <?php the_date();?></h2>
+                <?php
+                endif;
+                    ?>
+                    
                 
                 </div>
                     </div>

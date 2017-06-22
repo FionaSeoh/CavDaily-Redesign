@@ -1428,6 +1428,11 @@ p{
     font-family: 'Abhaya Libre', serif;
 
 }
+.test-2 a{
+    font-size: 50px;
+}
+
+
 @media (max-width: 1250px) {
     .orangeArticleTitle a{
         font-size: 30px;
