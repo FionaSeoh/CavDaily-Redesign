@@ -1014,6 +1014,26 @@ p{
 	display: none;
 }
 
+/* stuff for author page */
+
+.title-name{
+	font-family: 'Abhaya Libre', serif;
+}
+
+.about-the-author{
+	margin: 0;
+	font-size: 34px;
+}
+.left-content-area{
+	width: 50%;
+	display: inline-block;
+}
+.right-content-area{
+	width: 40%;
+	display: inline-block;
+	vertical-align: top;
+}
+
 /*media queries for sidebar*/
 
 @media screen and (max-width: 1040px){
@@ -1175,6 +1195,9 @@ p{
 .nav-contain-logo img {
 	margin-top: -15px;
 }
+
+
+
 
 @media screen and (max-width: 1300px) {
 	.nav-contain {
