@@ -1055,6 +1055,7 @@ p{
 }
 #masthead {
 	font-family: 'Abhaya Libre', Helvetica, sans-serif;
+
 }
 #masthead a{
 	text-decoration: none;
@@ -1211,4 +1212,40 @@ p{
 		width: 80px;
 		margin-top: -30px;
 	}
+}
+#colophon {
+	width: 100%;
+	height: 80px;
+	background-color: #292929;
+	color: #FFF;
+	font-family: 'Abhaya Libre', serif;
+}
+
+#colophon a {
+	color: #FFF;
+	text-decoration: none;
+}
+.final-nav {
+	margin-top: 30px;
+	width: 50%;
+	display: inline-block;
+}
+.final-nav ul {
+	line-height: 110%;
+	list-style: none;
+	text-align: right;
+}
+.final-nav li {
+	display: inline-block;
+	width: 19%;
+}
+.site-info {
+	margin-top: 15px;
+	width: 50%;
+	display: inline-block;
+	line-height: 110%;
+}
+.footer-container {
+	width: 90%;
+	margin:0 auto;
 }
