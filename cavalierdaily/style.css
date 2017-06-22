@@ -975,7 +975,7 @@ p{
 .articleTitleHomePage a{
     text-decoration: none;
     color: white;
-    font-size: 40px;
+    font-size: 3vw;
     
 }
 .articleTitleHomePage h2{
@@ -992,9 +992,13 @@ p{
     font-size: 14px;
     margin-top: -30px;
     color: white;
+    font-family: 'Abhaya Libre', serif;
+
 }
 .orangeArticleTitle{
     margin-top: -0.1px;
+    font-family: 'Abhaya Libre', serif;
+
 }
 @media (max-width: 1250px) {
     .orangeArticleTitle a{

@@ -50,7 +50,7 @@ get_header(); ?>
                 <div class="articleTitleHomePage">
                     <div class="orangeBox">
                         <h2 class="orangeArticleTitle" style=""><a href="<?php the_permalink(); ?>"><?php the_title();/*3*/ ?></a></h2>  
-                        <h2 class="orangeBoxArticleAuthor">posted by: <?php the_author(); ?> | <?php the_date();?></h2>
+                        <h2 class="orangeBoxArticleAuthor">Posted by: <?php the_author(); ?> | <?php the_date();?></h2>
                     </div>
                 
                 </div>
