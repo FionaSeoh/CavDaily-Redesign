@@ -39,17 +39,28 @@ get_header(); ?>
                     if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned to it.
                         the_post_thumbnail();
                     } else { 
-                        the_content();
+                        the_content( $more_link_text, $stripteaser );
                     }
                 ?>
             </div>
-                <div class="comments">
+            <div class="the-content">
+            	<?php
+            		if ( have_posts() ) :
+            		 while ( have_posts() ) : 
+            			the_post();
+					  	the_content();
+						endwhile;
+					endif;
+
+            	?>
+            </div>
+            <div class="comments">
                 <?php
 				if ( comments_open() || get_comments_number() ) :
 					comments_template();
                     endif;
-			?>
-                </div>
+				?>
+            </div>
 
 			</main><!-- #main -->
 		</div><!-- #primary -->
