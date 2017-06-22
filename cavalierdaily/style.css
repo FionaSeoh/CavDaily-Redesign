@@ -927,6 +927,7 @@ p{
 
 .main-container{
 	width: 90%;
+	font-family: 'Abhaya Libre', serif;
 	margin: 0 auto;
 }
 
@@ -1013,6 +1014,8 @@ p{
 .fb-share-button{
     float: right;
     margin-right: 5%;
+    z-index: 0;
+    display: inline-block;
 }
 .twitter-share-button{
     float: right;
@@ -1032,8 +1035,8 @@ p{
     float: right;
     margin-right: 5%;
     z-index: 10;
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin-top: 35px;
+    margin-bottom: 10px;
 }
 .widget-area{
 	background-color: #084887;
@@ -1197,6 +1200,7 @@ p{
 .hamburger-menu {
 	position: fixed;
 	top: 0;
+	z-index: 1;
 	height: 40px;
 	width: 100%;
 	background-color: #292929;
@@ -1306,7 +1310,6 @@ p{
 		margin-top: -30px;
 	}
 }
-<<<<<<< HEAD
 .entry-header{
     width: 85%;
     background-color: rgba(245, 138, 7,0.75) ;
@@ -1453,3 +1456,6 @@ p{
 	margin:0 auto;
 }
 
+.articleTitle {
+	margin-top: 15px;
+}

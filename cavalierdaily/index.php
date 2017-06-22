@@ -55,7 +55,7 @@ get_header(); ?>
                 
                 </div>
                     </div>
-                <p><?php the_excerpt(); ?></p>
+                <!-- <p><?php the_excerpt(); ?></p> -->
                 <?php endwhile; ?> <?php wp_reset_query(); /*4*/ ?>
                 </div>
 
