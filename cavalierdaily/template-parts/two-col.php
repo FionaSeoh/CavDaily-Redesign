@@ -13,7 +13,7 @@
 <style>
 @import url('https://fonts.googleapis.com/css?family=Abhaya+Libre');
 </style>
-
+<h1> Beginning of Two Column Loop</h1>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<div class="orange">
 	</div>
@@ -47,3 +47,4 @@
 		<?php cavalierdaily_entry_footer(); ?>
 	</footer><!-- .entry-footer -->
 </article><!-- #post-<?php the_ID(); ?> -->
+<h1> End of Two Column Loop</h1>

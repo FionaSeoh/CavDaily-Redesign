@@ -27,7 +27,7 @@ get_header(); ?>
 
 				<?php
 				endif;
-
+				?><h1> Start Matthew's Loop</h1><?php
 				/* Start the Loop */
 				while ( have_posts() ) : the_post();
 
@@ -39,7 +39,7 @@ get_header(); ?>
 					get_template_part( 'template-parts/content', get_post_format() );
 
 				endwhile;
-
+				?><h1> End Matthew's Loop</h1><?php
 				the_posts_navigation();
 
 			else :
@@ -48,9 +48,10 @@ get_header(); ?>
 
 			endif;
 
+			?><h1> Start All Loops</h1><?php
 			/* Start Fiona's Loop */
 				while ( have_posts() ) : the_post();
-
+				?><h1> Beginning of Outer Index Loop</h1><?php
 					/*
 					 * Include the Post-Format-specific template for the content.
 					 * If you want to override this in a child theme, then include a file
@@ -58,7 +59,10 @@ get_header(); ?>
 					 */
 					get_template_part( 'template-parts/two-col', get_post_format() );
 
+
+					?><h1> End of Outer Index Loop</h1><?php
 				endwhile;
+				?><h1> Start All Loops</h1><?php
 
 				the_posts_navigation();
 				?>
