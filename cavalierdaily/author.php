@@ -42,7 +42,7 @@
 			</div>
 
 			<div class="right-content-area">
-				<h2 class="title-name about-the-author">About the Author</h2>
+				<h2 class="title-name about-the-author">Author Bio:</h2>
 				<div class="author-bio">
 					<h3 class="authorDesc"><?php $authorDesc = the_author_meta('description'); echo $authorDesc; ?></h3>
 				</div>
