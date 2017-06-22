@@ -913,11 +913,12 @@ p{
 .main-container{
 	width: 90%;
 	margin: 0 auto;
+	display: inline-block;
 }
 
 .content-area{
 	width: 70%;
-	display: inline-block;
+
 }
 
 .side-bar-container{
@@ -927,13 +928,16 @@ p{
 }
 article{
 	display:inline-block;
-	width: 49%;
+	width: 30%;
 	background-color: #f7f5ff;
 	border-bottom: 5px solid #084887;
 	vertical-align: top;
 	margin-left: 10px;
 	padding-top: 15px;
+	border-style: solid;
+    border-width: 5px;
 }
+article.solid
 .entry-title a{
 	text-decoration: none;
 	font-weight: bold;
@@ -943,25 +947,22 @@ header.entry-header{
 	height: 180px;
 }
 h2.entry-header{
-	margin: 0;
+	/*margin: 0;*/
 	padding: 0;
 }
 span.posted-on{
-	margin: 0;  /*EXTRA SPACE GET RID OF ME*/
+	/*margin: 0;*/  /*EXTRA SPACE GET RID OF ME*/
 	padding: 0;
 	position: relative;
 	left: 207px;
 	top: -10px;
 /*	display: none;*/
 }
-.entry-content{
-	margin:0px;
-}
 .entry-content p{
-	margin:0px;
+	/*margin:0px;*/
 }
 h2.entry-title{
-	margin:0px;
+	/*margin:0px;*/
 }
 header.entry-header{
 	height: 170px;
@@ -974,4 +975,16 @@ header.entry-header{
 	float: right;
 	position: relative;
 	top:-14px;
+}
+.content{
+	display: inline-block;
+}
+#post-22{
+	display: inline-block;
+}
+#post-19{
+	display: inline-block;
+}
+article{
+	display: inline-block;
 }
