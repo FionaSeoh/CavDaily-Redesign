@@ -31,7 +31,7 @@
                     </div>
                     <div class="content">
                         <?php
-                        $threshold = 120;
+                        $threshold = 340;
                         if (strlen(get_the_content()) >= $threshold) {
                             while(substr(get_the_content(), $threshold, 1) != " ")
                                 $threshold--;
