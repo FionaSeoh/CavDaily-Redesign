@@ -13,26 +13,15 @@ if ( ! is_active_sidebar( 'sidebar-1' ) ) {
 ?>
 
 <aside id="secondary" class="widget-area" role="complementary">
-	<h3 class="sidebar-title">Trending Articles</h3>
+	<h3 class="sidebar-title">More by <?php $author = get_user_by( 'slug', get_query_var( 'author_name' ) );
+	echo $author->first_name; ?> </h3>
 
+	<?php $authorID = $author->ID ?>
+	
 	<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-
- 	<!-- Test if the current post is in category 3. -->
- 	<!-- If it is, the div box is given the CSS class "post-cat-three". -->
- 	<!-- Otherwise, the div box is given the CSS class "post". -->
-
-	 	<?php if ( in_category( 'Featured' ) && in_category('Trending') ) : ?>
-	 		<div class="sidebar-featured-post">
-	 			<?php $thumb = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' );?>
-				<div id="post" class="featured-post-sidebar-image" style="background-image: url('<?php echo $thumb['0'];?>'); width: =100%; height: 100%;">
-					<div class="featured-post-sidebar-title">
-						<h3><a href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h3>
-					</div>
-	 			</div>
-	 		</div>
-	 	<?php elseif (in_category('Trending')) : ?>
-	 		<div class="sidebar-post">
-			 		<!-- Display the Post Thumbnail -->
+		<?php if ( get_the_author_meta( 'ID' ) == $authorID ) : ?>
+			<div class="sidebar-post">
+			 		<!-- Display the Post Thumbnail --> 
 			 	<?php $thumb = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' );?>
 				<div id="post" class="sidebar-image" style="background-image: url('<?php echo $thumb['0'];?>'); width: =100%; height: 90%;">
 			 	<!-- Display the Title as a link to the Post's permalink. -->
@@ -43,16 +32,12 @@ if ( ! is_active_sidebar( 'sidebar-1' ) ) {
 				 		<?php the_excerpt(); ?>
 				 	</div>
 				</div>
-	 		</div>
-
+	 		</div> 
 	 	<?php else: ?>
 	 		<div class="sidebar-invisible"></div>
 
  	<?php endif; ?>
-
- 	<!-- Stop The Loop (but note the "else:" - see next line). -->
-
- <?php endwhile; else : ?>
+ 	<?php endwhile; else : ?>
 
 
  	<!-- The very first "if" tested to see if there were any Posts to -->
@@ -62,4 +47,6 @@ if ( ! is_active_sidebar( 'sidebar-1' ) ) {
 
  	<!-- REALLY stop The Loop. -->
  <?php endif; ?>
+	
+
 </aside><!-- #secondary -->

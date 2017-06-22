@@ -941,6 +941,7 @@ p{
 	width: 28%;
 	display: inline-block;
 	background-color: #084887;
+	margin-top: 37.543px;
 }
 
 .widget-area{
@@ -995,7 +996,9 @@ p{
 
 .sidebar-image{
 	width: 30%;
-	height: 100%;
+	height: 90%;
+	margin-top: 2%;
+	margin-bottom: 6%;
 	margin-left: 2%;
 	display: inline-block;
 	background-size: cover;
@@ -1249,5 +1252,74 @@ p{
 		height: 75px;
 		width: 80px;
 		margin-top: -30px;
+	}
+}
+
+/*media queries for author section */
+
+@media screen and (max-width: 980px){
+	.authorDesc{
+		padding-left: 20px;
+		font-size: 16px;
+	}
+	.about-the-author{
+		padding-left: 20px;
+		font-size: 30px;
+	}
+
+	.author-bio{
+		padding-top: 10px;
+	}
+}
+
+@media screen and (max-width: 800px){
+	.content-area-author{
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 590px){
+	.left-content-area{
+		width: 100%;
+		text-align: center;
+	}
+
+	.right-content-area{
+		width: 100%;
+	}
+
+	.about-the-author{
+		width: 300px;
+		margin: 15px auto;
+		padding: 0;
+	}
+
+	.author-bio{
+		width: 300px;
+		margin: 0 auto;
+	}
+
+	.authorDesc{
+		padding: 0;
+	}
+
+	.author-name{
+		text-align: center;
+	}
+
+	.title-name{
+		font-size: 36px;
+	}
+}
+
+@media screen and (max-width: 400px){
+	.about-the-author{
+		width: 95%;
+		margin: 0 auto;
+	}
+
+	.authorDesc{
+		width: 95%;
+		margin: 0 auto;
 	}
 }
