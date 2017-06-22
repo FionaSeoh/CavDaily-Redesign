@@ -13,7 +13,7 @@
  */
  get_header(); ?>
 	<div class="main-container">
-		<div id="primary" class="content-area">
+		<div id="primary" class="content-area content-area-author">
 			<main id="main" class="site-main" role="main">
 			
 			<div class="author-name">
@@ -55,7 +55,7 @@
 
 		<div class="side-bar-container">
 			<?php
-			get_sidebar(); ?>
+			get_sidebar("author"); ?>
 		</div>
 	</div>
 
