@@ -1035,7 +1035,7 @@ p{
     float: right;
     margin-right: 5%;
     z-index: 10;
-    margin-top: 35px;
+    margin-top: 15px;
     margin-bottom: 10px;
 }
 .widget-area{
@@ -1296,7 +1296,6 @@ p{
 		display: none;
 	}
 	.site-title {
-		line-height: 170%;
 		font-size: 3em;
 	}
 	.menu-item-has-children {
@@ -1308,6 +1307,9 @@ p{
 		height: 75px;
 		width: 80px;
 		margin-top: -30px;
+	}
+	.site-description {
+		margin-top: 10px;
 	}
 }
 .entry-header{
@@ -1409,6 +1411,9 @@ p{
     .entry-content{
         margin: 0;
     }
+    .site-title {
+		line-height: 150%;
+	}
 }
 @media (max-width: 600px) {
     .orangeArticleTitle a{
@@ -1417,6 +1422,9 @@ p{
     .orangeArticleTitle{
         line-height: 18px;
     }
+    .site-title {
+		font-size: 2.5em;
+	}
 }
 
 #colophon {
@@ -1455,7 +1463,27 @@ p{
 	width: 90%;
 	margin:0 auto;
 }
-
+.site-description {
+	margin-bottom: 20px;
+}
 .articleTitle {
 	margin-top: 15px;
+	display: block;
+	line-height: 110%;
+}
+.articleSubTitle {
+	margin: -10px 0 0 0;
+}
+#main {
+	margin-bottom: 40px;
+}
+.the-content{
+	width: 90%;
+	margin: 50px auto;
+}
+.the-content p {
+	font-size: 1.1em;
+}
+.comments p {
+	font-size: 0.9em;
 }
