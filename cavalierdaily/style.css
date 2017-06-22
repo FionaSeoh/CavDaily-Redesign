@@ -1018,6 +1018,8 @@ p{
 
 .title-name{
 	font-family: 'Abhaya Libre', serif;
+	margin-bottom: 0;
+	line-height: 30px;
 }
 
 .about-the-author{
@@ -1034,6 +1036,14 @@ p{
 	vertical-align: top;
 }
 
+.author-blurb{
+	margin-top: 0;
+	font-family: 'Abhaya Libre', serif;
+	font-size: 22px;
+}
+.author-bio{
+	padding-top: 15px;
+}
 /*media queries for sidebar*/
 
 @media screen and (max-width: 1040px){
