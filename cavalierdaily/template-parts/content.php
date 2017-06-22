@@ -6,10 +6,10 @@
  *
  * @package cavalierdaily
  */
-
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+    <div class="categoryArticleHolder">
 	<header class="entry-header">
 		<?php
 		if ( is_singular() ) :
@@ -23,7 +23,7 @@
 			<?php cavalierdaily_posted_on(); ?>
 		</div><!-- .entry-meta -->
 		<?php
-		endif; ?>
+		endif; ?> 
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">
@@ -47,6 +47,7 @@
 			) );
 		?>
 	</div><!-- .entry-content -->
+        </div>
 
 	<footer class="entry-footer">
 		<?php cavalierdaily_entry_footer(); ?>

@@ -1176,6 +1176,29 @@ p{
 .nav-contain-logo img {
 	margin-top: -15px;
 }
+.categoryTitle{
+    font-size: 14px;
+    height: 100px;
+    margin-top: -50px;
+
+}
+.entry-title{
+    font-size: 30px;
+    display: inline-block;
+}
+.entry-content{
+    border: 1px solid blue;
+    width: 20%;
+}
+.entry-header{
+    border: 1px solid red;
+    width: 80%;
+    float: right;
+}
+.categoryArticleHolder{
+    border: 3px solid green;
+}
+
 
 @media screen and (max-width: 1300px) {
 	.nav-contain {
