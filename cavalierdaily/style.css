@@ -975,13 +975,32 @@ p{
 .articleTitleHomePage a{
     text-decoration: none;
     color: white;
+    font-size: 40px;
+    
 }
 .articleTitleHomePage h2{
     margin-left: 2%;
 }
 .orangeBox{
     background: rgba(248,133,31,0.9);
-    padding-bottom: 0.2px;
+    position: absolute;
+    width: 99%;
+    bottom: -165px;
+    
+}
+.orangeBoxArticleAuthor{
+    font-size: 14px;
+    margin-top: -30px;
+    color: white;
+}
+.orangeArticleTitle{
+    margin-top: -0.1px;
+}
+@media (max-width: 1250px) {
+    .orangeArticleTitle a{
+        font-size: 30px;
+        
+    }
 }
 @media (max-width: 800px) {
     .side-bar-container{
@@ -996,5 +1015,13 @@ p{
     }
     .entry-content{
         margin: 0;
+    }
+}
+@media (max-width: 600px) {
+    .orangeArticleTitle a{
+        font-size: 20px;
+    }
+    .orangeArticleTitle{
+        line-height: 18px;
     }
 }
