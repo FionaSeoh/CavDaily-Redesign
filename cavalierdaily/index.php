@@ -18,7 +18,7 @@ get_header(); ?>
 			<main id="main" class="site-main" role="main">
 				<div id="featured">
 	                <?php
-	                query_posts('posts_per_page=3&cat=1'); /*1, 2*/
+	                query_posts('posts_per_page=1&cat=1'); /*1, 2*/
 	                if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 	                    <div class="articleImageHomePage" style="background:url(' <?php the_post_thumbnail_url();?>');
 	                        background-size: cover;
@@ -55,30 +55,45 @@ get_header(); ?>
 
 						get_template_part( 'template-parts/content', 'none' );
 
-					endif;
+					endif; ?>
 
-			/* Start Fiona's Loop */
-				while ( have_posts() ) : the_post();
-				// <h1> Beginning of Outer Index Loop</h1>
-					/*
-					 * Include the Post-Format-specific template for the content.
-					 * If you want to override this in a child theme, then include a file
-					 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
-					 */
-					get_template_part( 'template-parts/two-col', get_post_format() );
-				endwhile;
+				<div class="two-col-main">
+					<?php
+					/* Start Fiona's Loop */
+					$args = array('posts_per_page' => 2);
+            		$loop = new WP_Query($args);
+            		while($loop->have_posts()):$loop->the_post();
+						// <h1> Beginning of Outer Index Loop</h1>
+							/*
+							 * Include the Post-Format-specific template for the content.
+							 * If you want to override this in a child theme, then include a file
+							 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
+							 */
+							get_template_part( 'template-parts/two-col', get_post_format() );
+						endwhile;
 
-				the_posts_navigation();
-				?>
-<!-- 				/* Start the Loop */
-				
-				the_posts_navigation();
+						the_posts_navigation();
+						?>
+				</div>
+				<div class="two-col-1180">
+					<?php
+					/* Start Fiona's Loop */
+						$args2 = array('posts_per_page' => 2);
+	            		$loop2 = new WP_Query($args2);
+	            		while($loop2->have_posts()):$loop2->the_post();
+			
+						// <h1> Beginning of Outer Index Loop</h1>
+							/*
+							 * Include the Post-Format-specific template for the content.
+							 * If you want to override this in a child theme, then include a file
+							 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
+							 */
+							get_template_part( 'template-parts/1180-two-col', get_post_format() );
+						endwhile;
 
-			else :
-
-				get_template_part( 'template-parts/content', 'none' );
-
-			endif; ?> -->
+						the_posts_navigation();
+						?>
+				</div>
                 
 			</main><!-- #main -->
 		</div><!-- #primary -->

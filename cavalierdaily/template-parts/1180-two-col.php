@@ -19,6 +19,10 @@
     <div class="orange">
     </div>
 
+    	<?php $args = array('posts_per_page' => 2);
+            $loop = new WP_Query($args);
+                //while($loop->have_posts()):$loop->the_post();
+            ?>
                 <div class="">
                     <div class="title">
                         <a title="<?php the_title(); ?>"><?php the_title(); ?></a>
@@ -28,7 +32,7 @@
                     </div>
                     <div class="content">
                         <?php
-                        $threshold = 340;
+                        $threshold = 280;
                         if (strlen(get_the_content()) >= $threshold) {
                             while(substr(get_the_content(), $threshold, 1) != " ")
                                 $threshold--;

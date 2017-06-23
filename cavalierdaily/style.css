@@ -1633,29 +1633,38 @@ article .content{
 .site-description{
 	display: none;
 }
-.content-1180{
+.two-col-1180{
 	display: none;
+}
+.two-col-main{
+	position: relative;
 }
 
 /*media queries for landing page articles (featured, two column)*/
 @media screen and (max-width: 1180px){
+	.two-col-main{
+		position: relative;
+	}
 	article#post-1 .author-time{
 		position: relative;
 		top:-140px;
 		left: 185px;
 	}
 	article#post-22 .author-time{
-		position: relative;
-		top:-140px;
-		left: 185px;
+		position: absolute;
+		top:0;
+		right: 0;
 	}
-/*	.content{
+	.two-col-main{
 		display: none;
 	}
-	.content-1180{
-		display: block;*/
+	.two-col-1180{
+		display: inline-block;
+	}*/
+@media screen and (max-width: 905px){
+	.article{
+		display: block;
 	}
-
 /*media queries for author section */
 
 @media screen and (max-width: 980px){
