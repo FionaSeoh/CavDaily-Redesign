@@ -39,6 +39,16 @@
                         $content = substr(get_the_content(),0,$threshold)."...";
                         echo $content; ?>
                     </div>
+                    <div class="content-1180">
+                        <?php
+                        $threshold = 130;
+                        if (strlen(get_the_content()) >= $threshold) {
+                            while(substr(get_the_content(), $threshold, 1) != " ")
+                                $threshold--;
+                        }
+                        $content = substr(get_the_content(),0,$threshold)."...";
+                        echo $content; ?>
+                    </div>
                 </div>
                 <!-- <br> -->
 <!-- .entry-footer -->

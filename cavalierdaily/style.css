@@ -1346,7 +1346,7 @@ article .content{
 	vertical-align: top;
 }
 .hidden {
-	z-index: 10;
+	z-index: 100;
 	position: fixed;
 	top: 40px;
 	background-color: #292929;
@@ -1490,6 +1490,7 @@ article .content{
 .articleImageHomePage{
     margin: 0 auto;
     border-bottom: 9px #004D87 solid;
+    margin-bottom: 40px;
 }
 .articleTitleHomePage{
     z-index: 12;
@@ -1614,6 +1615,7 @@ article .content{
 }
 #main {
 	margin-bottom: 40px;
+	margin-top: 20px;
 }
 .the-content{
 	width: 90%;
@@ -1625,6 +1627,34 @@ article .content{
 .comments p {
 	font-size: 0.9em;
 }
+.page-item-2 a{
+	display: none;
+}
+.site-description{
+	display: none;
+}
+.content-1180{
+	display: none;
+}
+
+/*media queries for landing page articles (featured, two column)*/
+@media screen and (max-width: 1180px){
+	article#post-1 .author-time{
+		position: relative;
+		top:-140px;
+		left: 185px;
+	}
+	article#post-22 .author-time{
+		position: relative;
+		top:-140px;
+		left: 185px;
+	}
+/*	.content{
+		display: none;
+	}
+	.content-1180{
+		display: block;*/
+	}
 
 /*media queries for author section */
 
