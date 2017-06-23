@@ -1669,6 +1669,7 @@ article .content{
 	.two-col-1180 article{
 		width: 90%;
 		margin: 0 auto;
+		margin-bottom: 15px;
 	}
 /*media queries for author section */
 
