@@ -1309,6 +1309,11 @@ p{
 .nav-contain-logo img {
 	margin-top: -15px;
 }
+.articleInfoCategory{
+    border: 1px solid red;
+    float: right;
+}
+
 
 
 
@@ -1503,3 +1508,52 @@ p{
 .articleTitle {
 	margin-top: 15px;
 }
+.categoryFeatured img{
+    width: 98%;
+    margin: 0 auto;
+    height: 350px;
+    background-size: cover;
+}
+.categoryFeatured{
+    width: 90%;
+    margin: 0 auto;
+    border: 1px solid red;    
+}
+.page-header{
+    width: 90%;
+    margin: 0 auto;
+}
+.page-title{
+    margin-top: -15px;
+    margin-bottom: -120px;
+    
+}
+.sameee img{
+    width:30%;
+    margin: 0 auto;
+    height: 175px;
+    background-size: cover;
+}
+.sameee{
+    width: 90%;
+    margin: 0 auto;
+}
+.doggo{
+    position: static;
+}
+.ayylmao a{
+    color: black;
+}
+.categoryAuthor{
+    color: black;
+}
+/*
+p{
+    display: none;
+}
+.categoryFeatured p img{
+    display: static;
+}
+*/
+
+
