@@ -13,24 +13,29 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 
 			<section class="error-404 not-found">
-				<header class="page-header">
+				<header class="page-header kennyMessage">
                     <div class="teddy"></div>
 					<h1 class="page-title"><?php esc_html_e( '404 Error! Oops! We can\'t find this! Kenny is fixing the problem with his fidget spinner.' ); ?></h1>
 				</header><!-- .page-header -->
 
 				<div class="page-content pageContent404">
-					<p><?php esc_html_e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'cavalierdaily' ); ?></p>
+					<p class="search-sentence"><?php esc_html_e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'cavalierdaily' ); ?></p>
                 <br>
 					<?php
 						get_search_form();
-
+                    ?>
+                    <div class="makeDotsGoAway">
+                        <?php
 						the_widget( 'WP_Widget_Recent_Posts' );
-
-						// Only show the widget if site has multiple categories.
+                        ?>
+                    </div>
+						
+                    <?php
+                    // Only show the widget if site has multiple categories.
 						if ( cavalierdaily_categorized_blog() ) :
 					?>
 
-					<div class="widget widget_categories">
+					<div class="widget same3 widget_categories">
 						<h2 class="widget-title"><?php esc_html_e( 'Most Used Categories', 'cavalierdaily' ); ?></h2>
 						<ul>
 						<?php
