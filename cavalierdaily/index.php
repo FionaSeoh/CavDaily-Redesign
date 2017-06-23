@@ -17,6 +17,7 @@ get_header(); ?>
 		<div id="primary" class="content-area">
 			<main id="main" class="site-main" role="main">
 				<div id="featured">
+				<!-- start Matthew's featured article loop -->
 	                <?php
 	                query_posts('posts_per_page=1&cat=1'); /*1, 2*/
 	                if ( have_posts() ) while ( have_posts() ) : the_post(); ?>

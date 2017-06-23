@@ -928,12 +928,6 @@ p{
     font-family: 'Abhaya Libre', serif;
 }
 
-.main-container{
-	width: 90%;
-	font-family: 'Abhaya Libre', serif;
-	margin: 0 auto;
-}
-
 .content-area{
 	width: 70%;
 	display: inline-block;
@@ -945,6 +939,12 @@ p{
 	width: 25%;
 	display: inline-block;
 	border: 1px black solid;
+}
+/*Fiona landing page styles*/
+.main-container{
+	width: 90%;
+	font-family: 'Abhaya Libre', serif;
+	margin: 0 auto;
 }
 article{
 	display:inline-block;
@@ -1022,12 +1022,15 @@ header.entry-header{
 	color:black;
 }
 .author-time{
-	position: relative;
-	top:-110px;
-	left: 185px;
-	color: white;
+	position: absolute;
+	top: 0;
+	right: 0;
+	color: black;
 	font-family: 'Abhaya Libre', serif;
 
+}
+article {
+	position: relative;
 }
 article img{
 	width: 50%;
@@ -1661,9 +1664,14 @@ article .content{
 	.two-col-1180{
 		display: inline-block;
 	}*/
-@media screen and (max-width: 905px){
-	.article{
-		display: block;
+@media screen and (max-width: 590px){
+	.two-col-main article{
+		width: 90%;
+		border: 3px solid green;
+	}
+	.two-col-1180 article{
+		width: 90%;
+		border: 3px solid green;
 	}
 /*media queries for author section */
 
@@ -1720,6 +1728,13 @@ article .content{
 	.title-name{
 		font-size: 36px;
 	}
+	article{
+		width: 90%;
+		display: block;
+	}
+	article #post-22{
+		width: 90%;
+	}
 }
 
 @media screen and (max-width: 400px){
@@ -1727,7 +1742,6 @@ article .content{
 		width: 95%;
 		margin: 0 auto;
 	}
-
 	.authorDesc{
 		width: 95%;
 		margin: 0 auto;
