@@ -45,6 +45,7 @@ function cavalierdaily_setup() {
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
 		'menu-1' => esc_html__( 'Primary', 'cavalierdaily' ),
+		'menu-2' => esc_html__( 'Hamburger', 'cavalierdaily' ),
 	) );
 
 	/*
@@ -141,3 +142,21 @@ require get_template_directory() . '/inc/customizer.php';
  * Load Jetpack compatibility file.
  */
 require get_template_directory() . '/inc/jetpack.php';
+
+/** 
+ * limitin the length of an excerpt for the sidebar
+ */
+if (condition) {
+	function wpdocs_custom_excerpt_length( $length ) {
+    return 12;
+	}
+	add_filter( 'excerpt_length', 'wpdocs_custom_excerpt_length', 999 );
+}
+else {
+	function wpdocs_custom_excerpt_length( $length ) {
+	    return 12;
+	}
+	add_filter( 'excerpt_length', 'wpdocs_custom_excerpt_length', 999 );
+}
+
+
