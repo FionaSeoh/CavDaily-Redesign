@@ -12,7 +12,9 @@ get_header(); ?>
 		<div id="primary" class="content-area">
         <div class="articleTitle">
             <?php echo the_title( $before, $after, $echo ); ?> 
-            <?php types_render_field("my-date", array("style" => "calendar")); ?>
+	        <div class="articleSubTitle">
+	            <?php echo types_render_field("event-date", array("style" => "F j, Y")); ?>
+	        </div>
         </div>
         
         <div class="share-buttons">
