@@ -20,9 +20,6 @@
 					<h2 class="title-name"><?php echo get_the_author(); ?></h2>
 					<h4 class="author-blurb">
 						<?php the_author_posts_link(); ?>
-						<?php
-						$blurb =  types_render_usermeta_field( "author-blurb", array( ) );
-						echo $blurb; ?>
 					</h4>
 			</div>
 

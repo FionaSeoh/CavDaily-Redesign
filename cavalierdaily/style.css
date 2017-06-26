@@ -975,7 +975,6 @@ h2.entry-header{
 span.posted-on{
 	/*margin: 0;*/  /*EXTRA SPACE GET RID OF ME*/
 	padding: 0;
-	position: relative;
 	left: 207px;
 	top: -10px;
 /*	display: none;*/
@@ -1397,7 +1396,7 @@ article .content{
 	text-decoration: none;
 }
 
-.menu-item-has-children li {
+.hidden .menu-item-has-children li {
 	list-style: none;
 	font-size: 0.8em;
 	/*height: 35px;
@@ -1406,7 +1405,11 @@ article .content{
 	font-weight: normal;
 	text-align: left;
 }
-
+.sub-menu {
+	padding-top: 10px;
+	margin: 0;
+	font-size: 0.7em;
+}
 
 .nav-contain-logo img {
 	margin-top: -15px;

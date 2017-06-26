@@ -16,6 +16,7 @@ get_header(); ?>
           <?php cavalierdaily_posted_on(); 
           the_author_meta('first_name', 1); ?> <?php
           the_author_meta('last_name', 1);
+          the_author_meta( 'url', 1 );
 		?>
         </div>
         </div>
