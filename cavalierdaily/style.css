@@ -1024,7 +1024,9 @@ header.entry-header{
 	right: 0;
 	color: black;
 	font-family: 'Abhaya Libre', serif;
-
+}
+.author-time a{
+	color: black;
 }
 article {
 	position: relative;
@@ -1523,7 +1525,10 @@ article .content{
     margin-top: -30px;
     color: white;
     font-family: 'Abhaya Libre', serif;
-
+}
+.orangeBoxArticleAuthor a{
+	font-size: 14px;
+	color: white;
 }
 .orangeArticleTitle{
     margin-top: -0.1px;

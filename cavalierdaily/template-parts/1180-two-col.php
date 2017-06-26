@@ -28,7 +28,7 @@
                         <a title="<?php the_title(); ?>"><?php the_title(); ?></a>
                     </div>
                     <div class="author-time">
-                           by <?php the_author(); ?> | <?php the_time('F j, Y'); ?>
+                           by <?php the_author_posts_link(); ?> | <?php the_time('F j, Y'); ?>
                     </div>
                     <div class="content">
                         <?php

@@ -22,9 +22,10 @@
                 <div class="">
                     <div class="title">
                         <a title="<?php the_title(); ?>"><?php the_title(); ?></a>
+                        <a href="http://localhost:8888/cavdaily/2017/06/21/%e2%80%8bstudent-council-hosts-vigil-in-memory-of-otto-warmbier/">​Student Council hosts vigil in memory of Otto Warmbier</a>
                     </div>
                     <div class="author-time">
-                           by <?php the_author(); ?> | <?php the_time('F j, Y'); ?>
+                           by <?php the_author_posts_link(); ?> | <?php the_time('F j, Y'); ?>
                     </div>
                     <div class="content">
                         <?php

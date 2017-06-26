@@ -21,6 +21,7 @@ get_header(); ?>
 	                <?php
 	                query_posts('posts_per_page=1&cat=1'); /*1, 2*/
 	                if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
+	                	
 	                    <div class="articleImageHomePage" style="background:url(' <?php the_post_thumbnail_url();?>');
 	                        background-size: cover;
 	                        background-position: center center;
@@ -30,7 +31,7 @@ get_header(); ?>
 	                <div class="articleTitleHomePage">
 	                    <div class="orangeBox">
 	                        <h2 class="orangeArticleTitle" style=""><a href="<?php the_permalink(); ?>"><?php the_title();/*3*/ ?></a></h2>  
-	                        <h2 class="orangeBoxArticleAuthor">Posted by: <?php the_author(); ?> | <?php the_date();?></h2>
+	                        <h2 class="orangeBoxArticleAuthor">Posted by: <?php the_author_posts_link(); ?> | <?php the_date();?></h2>
 	                    </div>
 	                
 	                </div>
