@@ -10,11 +10,20 @@
 ?>
 <div class="postHolder">
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header doggo">
-        <div class="linkHolder ayylmao">
+    <div class="smallerArticleHolders">
+
+	<header class="entry-header smallerCategoryArticles">
+        <div class="linkHolder smallerCatTitle">
+        <?php ?>
+            <div class="smollImage">
         <?php
+        echo get_the_post_thumbnail();
+        ?>
+                </div>
+         <?php
+        
 		if ( is_singular() ) :
-			the_title( '<h1 class="entry-title">', '</h1>' );
+			the_title( '<h1 class="entry-title movedown">', '</h1>' );
 		else :
 			the_title( '<h2 class="entry-title"><a href="' . esc_url(   get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
 		endif;
@@ -27,6 +36,8 @@
 		<?php
 		endif; ?>
 	</header><!-- .entry-header -->
+    </div>
+    
 
 	<div class="entry-content sameee">
 		<?php

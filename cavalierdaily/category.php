@@ -48,7 +48,6 @@ get_header(); ?>
         endif;
         endwhile; endif;
         ?>
-
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
