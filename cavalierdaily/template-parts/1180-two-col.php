@@ -24,8 +24,8 @@
                 //while($loop->have_posts()):$loop->the_post();
             ?>
                 <div class="">
-                    <div class="title">
-                        <a title="<?php the_title(); ?>"><?php the_title(); ?></a>
+                    <div class="title"
+                            style=""><a href="<?php the_permalink(); ?>"><?php the_title();/*3*/ ?></a>
                     </div>
                     <div class="author-time">
                            by <?php the_author_posts_link(); ?> | <?php the_time('F j, Y'); ?>

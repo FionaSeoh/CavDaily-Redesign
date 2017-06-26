@@ -1014,6 +1014,7 @@ header.entry-header{
     line-height: 1;
     font-weight: 900;
     padding-left: 15px;
+    display: inline-block;
 }
 .title a{
 	color:black;

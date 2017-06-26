@@ -20,10 +20,12 @@
     </div>
 
                 <div class="">
-                    <div class="title">
-                        <a title="<?php the_title(); ?>"><?php the_title(); ?></a>
-                        <a href="http://localhost:8888/cavdaily/2017/06/21/%e2%80%8bstudent-council-hosts-vigil-in-memory-of-otto-warmbier/">​Student Council hosts vigil in memory of Otto Warmbier</a>
+                    <div class="title"
+                            style=""><a href="<?php the_permalink(); ?>"><?php the_title();/*3*/ ?></a>
                     </div>
+
+                        <!-- <a href="http://localhost:8888/cavdaily/2017/06/21/%e2%80%8bstudent-council-hosts-vigil-in-memory-of-otto-warmbier/">​Student Council hosts vigil in memory of Otto Warmbier</a> -->
+
                     <div class="author-time">
                            by <?php the_author_posts_link(); ?> | <?php the_time('F j, Y'); ?>
                     </div>
