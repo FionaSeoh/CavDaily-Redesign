@@ -908,9 +908,11 @@ object {
 
 h1{
     font-size: 3.998em;
+    font-family: 'Abhaya Libre', serif;
 }
 h2{
     font-size: 2.827em;
+    font-family: 'Abhaya Libre', serif;
 }
 h3{
 	font-size: 14px;
@@ -926,12 +928,6 @@ p{
     font-family: 'Abhaya Libre', serif;
 }
 
-.main-container{
-	width: 90%;
-	font-family: 'Abhaya Libre', serif;
-	margin: 0 auto;
-}
-
 .content-area{
 	width: 70%;
 	display: inline-block;
@@ -940,12 +936,115 @@ p{
 
 
 .side-bar-container{
+	width: 25%;
+	display: inline-block;
+	border: 1px black solid;
+}
+/*Fiona landing page styles*/
+.main-container{
+	width: 90%;
+	font-family: 'Abhaya Libre', serif;
+	margin: 0 auto;
+}
+article{
+	display:inline-block;
+	width: 49%;
+	height: 350px;
+	background-color: #f7f5ff;
+	border-bottom: 5px solid #084887;
+	vertical-align: top;
+	margin-left: 10px;
+	padding-top: 15px;
+	/*margin-right: 900px;*/
+	/*border-style: solid;
+    border-width: 5px;*/
+}
+article.solid
+.entry-title a{
+	text-decoration: none;
+	font-weight: bold;
+}
+header.entry-header{
+	font-size: .827em;
+	height: 180px;
+}
+h2.entry-header{
+	/*margin: 0;*/
+	padding: 0;
+}
+span.posted-on{
+	/*margin: 0;*/  /*EXTRA SPACE GET RID OF ME*/
+	padding: 0;
+	position: relative;
+	left: 207px;
+	top: -10px;
+/*	display: none;*/
+}
+.entry-content p{
+	/*margin:0px;*/
+}
+h2.entry-title{
+	/*margin:0px;*/
+}
+header.entry-header{
+	height: 170px;
+/*	margin-top: 0px;*/
+}
+.orange{
+	width: 215px;
+	background-color: #f9ab55;
+	height: 25px;
+	float: right;
+	position: relative;
+	top:-15px;
+}
+.content{
+	display: inline-block;
+	font-family: 'Abhaya Libre', serif;
+}
+#post-4 img{
+	height: 160px;
+	width: auto;
+}
+
+.title{
+	/*font-size: 2.827em;*/
+	font-size: 2em;
+    font-family: 'Abhaya Libre', serif;
+    line-height: 1;
+    font-weight: 900;
+    padding-left: 15px;
+    display: inline-block;
+}
+.title a{
+	color:black;
+}
+.author-time{
+	position: absolute;
+	top: 0;
+	right: 0;
+	color: black;
+	font-family: 'Abhaya Libre', serif;
+}
+.author-time a{
+	color: black;
+}
+article {
+	position: relative;
+}
+article img{
+	width: 50%;
+	height: auto;
+	margin-left: 10px;
+}
+article .content{
+	padding-left: 15px;
+	padding-right: 15px;
 /*	width: 25%; my code*/
 /*	display: inline-block;*/
-    width: 28%;
+/*    width: 28%;*/
 	display: inline-block;
-	background-color: #084887;
-	margin-top: 37.543px;
+/*	background-color: #084887;*/
 }
 
 .entry-header{
@@ -1259,7 +1358,7 @@ p{
 	vertical-align: top;
 }
 .hidden {
-	z-index: 10;
+	z-index: 100;
 	position: fixed;
 	top: 40px;
 	background-color: #292929;
@@ -1403,6 +1502,7 @@ p{
 .articleImageHomePage{
     margin: 0 auto;
     border-bottom: 9px #004D87 solid;
+    margin-bottom: 40px;
 }
 .articleTitleHomePage{
     z-index: 12;
@@ -1435,7 +1535,10 @@ p{
     margin-top: -30px;
     color: white;
     font-family: 'Abhaya Libre', serif;
-
+}
+.orangeBoxArticleAuthor a{
+	font-size: 14px;
+	color: white;
 }
 .orangeArticleTitle{
     margin-top: -0.1px;
@@ -1480,7 +1583,7 @@ p{
 
 #colophon {
 	width: 100%;
-	height: 80px;
+	height: 120px;
 	background-color: #292929;
 	color: #FFF;
 	font-family: 'Abhaya Libre', serif;
@@ -1494,6 +1597,10 @@ p{
 	margin-top: 30px;
 	width: 50%;
 	display: inline-block;
+	font-size: 0.7em;
+}
+.final-nav .menu-item-has-children li {
+	display: none;
 }
 .final-nav ul {
 	line-height: 110%;
@@ -1527,6 +1634,7 @@ p{
 }
 #main {
 	margin-bottom: 40px;
+	margin-top: 20px;
 }
 .the-content{
 	width: 90%;
@@ -1538,7 +1646,50 @@ p{
 .comments p {
 	font-size: 0.9em;
 }
+.page-item-2 a{
+	display: none;
+}
+.site-description{
+	display: none;
+}
+.two-col-1180{
+	display: none;
+}
+.two-col-main{
+	position: relative;
+}
 
+/*media queries for landing page articles (featured, two column)*/
+@media screen and (max-width: 1180px){
+	.two-col-main{
+		position: relative;
+	}
+	article#post-1 .author-time{
+		position: relative;
+		top:-140px;
+		left: 185px;
+	}
+	article#post-22 .author-time{
+		position: absolute;
+		top:0;
+		right: 0;
+	}
+	.two-col-main{
+		display: none;
+	}
+	.two-col-1180{
+		display: block;
+	}
+@media screen and (max-width: 590px){
+	.two-col-main article{
+		width: 90%;
+		margin: 0 auto;
+	}
+	.two-col-1180 article{
+		width: 90%;
+		margin: 0 auto;
+		margin-bottom: 15px;
+	}
 /*media queries for author section */
 
 @media screen and (max-width: 980px){
@@ -1559,6 +1710,12 @@ p{
 @media screen and (max-width: 800px){
 	.content-area-author{
 		width: 100%;
+	}
+	#colophon {
+		height: 220px;
+	}
+	.final-nav .menu-item-has-children {
+		display: block;
 	}
 }
 
@@ -1594,6 +1751,13 @@ p{
 	.title-name{
 		font-size: 36px;
 	}
+	article{
+		width: 90%;
+		display: block;
+	}
+	article #post-22{
+		width: 90%;
+	}
 }
 
 @media screen and (max-width: 400px){
@@ -1601,10 +1765,8 @@ p{
 		width: 95%;
 		margin: 0 auto;
 	}
-
 	.authorDesc{
 		width: 95%;
 		margin: 0 auto;
 	}
->>>>>>> aff11fad6c18fdedba204fd81515b62571b1282d
 }
