@@ -1165,6 +1165,15 @@ p{
 	}
 }
 
+.singleEventPic{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.singleEventPic img{
+    width: 100%;
+}
+
 @media screen and (max-width: 875px){
 	.sidebar-image{
 		display: none;
