@@ -20,8 +20,6 @@
     </div>
 
                 <div class="">
-                    <div class="title">
-                        <a title="<?php the_title(); ?>"><?php the_title(); ?></a>
                     <div class="title"
                             style=""><a href="<?php the_permalink(); ?>"><?php the_title();/*3*/ ?></a>
                     </div>
