@@ -1517,7 +1517,6 @@ p{
 .categoryFeatured{
     width: 90%;
     margin: 0 auto;
-    border: 1px solid red;    
 }
 .page-header{
     width: 90%;
@@ -1566,6 +1565,7 @@ p{
     background-color: #084887;
     color: white;
     border: 10px solid #E27A1E;
+    font-size: 1vw;
 
 }
 .mainContainer404{
@@ -1594,12 +1594,24 @@ p{
     text-align: left;
     margin: 0 auto;
 }
+@media screen and (max-width: 1200px){
+    .kennyMessage{
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 900px){
+    .kennyMessage{
+        font-size: 10px;
+    }
+}
 @media screen and (max-width: 550px){
     .makeDotsGoAway ul{
         width: 300px;
     }
+    .kennyMessage{
+        font-size: 8px;
+    }
 }
-
 
 
 

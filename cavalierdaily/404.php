@@ -14,7 +14,6 @@ get_header(); ?>
 
 			<section class="error-404 not-found">
 				<header class="page-header kennyMessage">
-                    <div class="teddy"></div>
 					<h1 class="page-title"><?php esc_html_e( '404 Error! Oops! We can\'t find this! Kenny is fixing the problem with his fidget spinner.' ); ?></h1>
 				</header><!-- .page-header -->
 
