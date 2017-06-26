@@ -1557,8 +1557,8 @@ p{
 .bigHeader{
     position: absolute;
     width: 52%;
-    left: 155px;
-    top: 570px;
+    left: 10%;
+    top: 550px;
 }
 .AAA{
     margin-top: 150px;
@@ -1567,6 +1567,26 @@ p{
     width:200px;
     height: auto;
     position: absolute;
+}
+@media (max-width: 1500px) {
+    .smallerCatTitle a{
+        font-size: 20px;
+    }
+}
+@media (max-width: 800px) {
+    .bigHeader{
+        width: 80%;
+        left: 8%;
+    }
+    .smallerArticleHolders{
+    margin-left: -4%;
+}
+    
+}
+@media (max-width: 1070px){
+    .categoryAuthor{
+        margin-top: -40px;
+}
 }
 
 
