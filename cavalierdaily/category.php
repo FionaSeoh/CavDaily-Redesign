@@ -21,27 +21,36 @@ get_header(); ?>
 					the_archive_description( '<div class="archive-description">', '</div>' );
 				?>
 			</header><!-- .page-header -->
-
 			<?php
 			/* Start the Loop */
-			while ( have_posts() ) : the_post();
-
+        endif;
+			/* Start the Loop */
 				/*
 				 * Include the Post-Format-specific template for the content.
 				 * If you want to override this in a child theme, then include a file
 				 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
 				 */
-				get_template_part( 'template-parts/content', get_post_format() );
 
-			endwhile;
 
-			the_posts_navigation();
+				 /// create var for count
+        $count = 0;
 
-		else :
+            // do your loop & increment the var
+        if (have_posts()) : while (have_posts()) : the_post(); $count++;
 
-			get_template_part( 'template-parts/content', 'none' );
+        if ($count === 1) :
+            // do code for only the first post...
+            get_template_part( 'template-parts/content2', get_post_format() );
+//        endif;
+        else:
+            get_template_part( 'template-parts/content3', 'none' );
 
-		endif; ?>
+            // do code for the rest of your posts...
+
+            // end loop
+        endif;
+        endwhile; endif;
+        ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->

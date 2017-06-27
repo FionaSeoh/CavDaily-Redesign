@@ -1414,6 +1414,11 @@ article .content{
 .nav-contain-logo img {
 	margin-top: -15px;
 }
+.articleInfoCategory{
+    border: 1px solid red;
+    float: right;
+}
+
 
 
 
@@ -1539,6 +1544,11 @@ article .content{
     font-family: 'Abhaya Libre', serif;
 
 }
+.test-2 a{
+    font-size: 50px;
+}
+
+
 @media (max-width: 1250px) {
     .orangeArticleTitle a{
         font-size: 30px;
@@ -1674,6 +1684,7 @@ article .content{
 	.two-col-1180{
 		display: block;
 	}
+}
 @media screen and (max-width: 590px){
 	.two-col-main article{
 		width: 90%;
@@ -1685,7 +1696,7 @@ article .content{
 		margin-bottom: 15px;
 	}
 /*media queries for author section */
-
+    }
 @media screen and (max-width: 980px){
 	.authorDesc{
 		padding-left: 20px;
@@ -1764,3 +1775,110 @@ article .content{
 		margin: 0 auto;
 	}
 }
+    
+.categoryFeatured img{
+    width: 98%;
+    margin: 0 auto;
+    height: 350px;
+    background-size: cover;
+}
+.categoryFeatured{
+    width: 90%;
+    margin: 0 auto;
+}
+.page-header{
+    width: 90%;
+    margin: 0 auto;
+}
+.page-title{
+    margin-top: -15px;
+    margin-bottom: -120px;
+    
+}
+.sameee img{
+    width:30%;
+    margin: 0 auto;
+    height: 175px;
+    background-size: cover;
+}
+.sameee{
+    width: 90%;
+    margin: 0 auto;
+}
+.doggo{
+    position: static;
+}
+.ayylmao a{
+    color: black;
+}
+.categoryAuthor{
+    color: black;
+}
+/*
+p{
+    display: none;
+}
+.categoryFeatured p img{
+    display: static;
+}
+*/
+.kennyMessage{
+    width: 90%;
+    margin: 0 auto;
+    height: 300px;
+    padding: 20px;
+    margin-top: 50px;
+    margin-bottom: 80px;
+    border: 1px solid black;
+    background-color: #084887;
+    color: white;
+    border: 10px solid #E27A1E;
+    font-size: 1vw;
+
+}
+.mainContainer404{
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    list-style: none;
+}
+.same3 ul{
+    margin: 0 auto;
+    text-align: left;
+    width: 400px;
+    list-style: none;
+}
+
+.search-sentence{
+    width: 90%;
+    margin: 0 auto;
+}
+.pageContent404{
+    list-style: none;
+}
+.makeDotsGoAway ul{
+    list-style: none;
+    width:400px;
+    text-align: left;
+    margin: 0 auto;
+}
+@media screen and (max-width: 1200px){
+    .kennyMessage{
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 900px){
+    .kennyMessage{
+        font-size: 10px;
+    }
+}
+@media screen and (max-width: 550px){
+    .makeDotsGoAway ul{
+        width: 300px;
+    }
+    .kennyMessage{
+        font-size: 8px;
+    }
+}
+
+
