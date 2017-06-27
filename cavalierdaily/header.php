@@ -59,29 +59,29 @@
 	     	$(".menu-item-has-children li").addClass("hide");
 
 	     	// put stuff for accordion function here
-	     	$( "#hamburger>li:nth-child(1)" ).click(function( event) {
-	 	
+	     	$( ".news" ).click(function( event) {
+	 			 event.preventDefault();
 		         $(".news-crews").removeClass("hide");
 		         $(".sports-crews").addClass("hide");
+		         $(".sports").addClass("padding");
 		         $(".life-crews").addClass("hide");
 		         $(".op-crews").addClass("hide");
 		         $(".ae-crews").addClass("hide");
-		         event.preventDefault();
+		        
 		 
 	     	});
 
-	     	$( "#hamburger>li:nth-child(2)" ).click(function( event) {
+	     	$( ".sports" ).click(function( event) {
+	     		event.preventDefault();
 		         $(".sports-crews").removeClass("hide");
 		         $(".news-crews").addClass("hide");
 		         $(".life-crews").addClass("hide");
 		         $(".op-crews").addClass("hide");
 		         $(".ae-crews").addClass("hide");
-
-		         event.preventDefault();
 		 
 	     	});
 
-	     	$( "#hamburger>li:nth-child(3)" ).click(function( event) {
+	     	$( ".life" ).click(function( event) {
 	 	
 		         $(".life-crews").removeClass("hide");
 		         $(".sports-crews").addClass("hide");
@@ -96,7 +96,7 @@
 		 
 	     	});
 
-	     	$( "#hamburger>li:nth-child(4)" ).click(function( event) {
+	     	$(".op" ).click(function( event) {
 	 	
 		         $(".op-crews").removeClass("hide");
 		         $(".sports-crews").addClass("hide");
@@ -111,9 +111,9 @@
 		 
 	     	});
 
-	     	$( "#hamburger>li:nth-child(5)" ).click(function( event) {
+	     	$( ".ae" ).click(function( event) {
 	 	
-		         $(".ae-crews").toggleClass("hide");
+		         $(".ae-crews").removeClass("hide");
 		         $(".sports-crews").addClass("hide");
 		         $(".life-crews").addClass("hide");
 		         $(".op-crews").addClass("hide");

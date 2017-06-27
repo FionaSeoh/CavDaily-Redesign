@@ -937,8 +937,8 @@ p{
 
 .side-bar-container{
 	width: 25%;
-	display: inline-block;
-	border: 1px black solid;
+	display: inline-block;/*
+	border: 1px black solid;*/
 }
 /*Fiona landing page styles*/
 .main-container{
@@ -973,11 +973,9 @@ h2.entry-header{
 	padding: 0;
 }
 span.posted-on{
-	/*margin: 0;*/  /*EXTRA SPACE GET RID OF ME*/
 	padding: 0;
 	left: 207px;
 	top: -10px;
-/*	display: none;*/
 }
 .entry-content p{
 	/*margin:0px;*/
@@ -1499,7 +1497,6 @@ article .content{
     margin-bottom: 40px;
 }
 .articleTitleHomePage{
-    z-index: 12;
     position: relative;
     height: 30%;
     padding-top: 200px;
