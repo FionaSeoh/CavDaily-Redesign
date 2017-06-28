@@ -1,8 +1,8 @@
 <?php
 /**
- * The template for displaying all single posts
+ * The template for displaying all events
  *
- * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#single-post
+ * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#event
  *
  * @package cavalierdaily
  */
@@ -12,13 +12,9 @@ get_header(); ?>
 		<div id="primary" class="content-area">
         <div class="articleTitle">
             <?php echo the_title( $before, $after, $echo ); ?> 
-        <div class="articleSubTitle">
-          <?php cavalierdaily_posted_on(); 
-          the_author_meta('first_name', 1); ?> <?php
-          the_author_meta('last_name', 1);
-          the_author_meta( 'url', 1 );
-		?>
-        </div>
+	        <div class="articleSubTitle">
+	            <?php echo types_render_field("event-date", array("style" => "F j, Y")); ?>
+	        </div>
         </div>
         
         <div class="share-buttons">
@@ -35,7 +31,7 @@ get_header(); ?>
             
 			<main id="main" class="site-main" role="main">
             
-            <div class="singleArticlePic">
+            <div class="singleEventPic">
                 <?php
                     if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned to it.
                         the_post_thumbnail();
@@ -55,20 +51,10 @@ get_header(); ?>
 
             	?>
             </div>
-            <div class="comments">
-                <?php
-				if ( comments_open() || get_comments_number() ) :
-					comments_template();
-                    endif;
-				?>
-            </div>
-
+           
 			</main><!-- #main -->
 		</div><!-- #primary -->
-		<div class="side-bar-container">
-			<?php
-			get_sidebar(); ?>
-		</div>
+		
 </div>
 <?php
 get_footer(); ?>

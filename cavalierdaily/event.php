@@ -1,8 +1,8 @@
 <?php
 /**
- * The template for displaying all single posts
+ * The template for displaying all events
  *
- * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#single-post
+ * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#event
  *
  * @package cavalierdaily
  */
@@ -12,13 +12,6 @@ get_header(); ?>
 		<div id="primary" class="content-area">
         <div class="articleTitle">
             <?php echo the_title( $before, $after, $echo ); ?> 
-        <div class="articleSubTitle">
-          <?php cavalierdaily_posted_on(); 
-          the_author_meta('first_name', 1); ?> <?php
-          the_author_meta('last_name', 1);
-          the_author_meta( 'url', 1 );
-		?>
-        </div>
         </div>
         
         <div class="share-buttons">
@@ -55,14 +48,7 @@ get_header(); ?>
 
             	?>
             </div>
-            <div class="comments">
-                <?php
-				if ( comments_open() || get_comments_number() ) :
-					comments_template();
-                    endif;
-				?>
-            </div>
-
+           
 			</main><!-- #main -->
 		</div><!-- #primary -->
 		<div class="side-bar-container">

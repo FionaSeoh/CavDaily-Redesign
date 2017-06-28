@@ -41,7 +41,7 @@ get_header(); ?>
 	                </div>
 
 					<?php
-					if ( have_posts() ) :
+                if ( have_posts() ) :
 
 						if ( is_home() && ! is_front_page() ) : ?>
 							<header>
@@ -56,6 +56,7 @@ get_header(); ?>
 					else :
 
 						get_template_part( 'template-parts/content', 'none' );
+
 
 					endif; ?>
 
@@ -74,9 +75,8 @@ get_header(); ?>
 							get_template_part( 'template-parts/two-col', get_post_format() );
 						endwhile;
 
-						the_posts_navigation();
-						?>
-				</div>
+                    ?>
+   
 				<div class="two-col-1180">
 					<?php
 					/* Start Fiona's Loop */
