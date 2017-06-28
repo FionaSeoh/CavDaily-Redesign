@@ -21,8 +21,8 @@
 					<h4 class="author-blurb">
 						<?php the_author_posts_link(); ?>
 						<?php
-						$blurb =  types_render_usermeta_field( "author-blurb", array( ) );
-						echo $blurb; ?>
+						// $blurb =  types_render_usermeta_field( "author-blurb", array( ) );
+						// echo $blurb; ?>
 					</h4>
 			</div>
 
