@@ -938,7 +938,7 @@ p{
 .side-bar-container{
 	width: 25%;
 	display: inline-block;
-	border: 1px black solid;
+	margin-top: 20px;
 }
 /*Fiona landing page styles*/
 .main-container{
