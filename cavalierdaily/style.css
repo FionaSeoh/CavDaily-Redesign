@@ -939,6 +939,9 @@ p{
 	width: 25%;
 	display: inline-block;/*
 	border: 1px black solid;*/
+	display: inline-block;
+	margin-top: 20px;
+
 }
 /*Fiona landing page styles*/
 .main-container{
@@ -1259,6 +1262,15 @@ article .content{
 	.sidebar-article-text{
 		width: 55%;
 	}
+}
+
+.singleEventPic{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.singleEventPic img{
+    width: 100%;
 }
 
 @media screen and (max-width: 875px){
